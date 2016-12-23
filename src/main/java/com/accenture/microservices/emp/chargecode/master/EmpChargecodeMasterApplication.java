@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //@SpringBootApplication(scanBasePackages = {"com.accenture.microservices.emp.chargecode"})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = { "com.accenture.microservices.emp.chargecode" })
 @EnableAutoConfiguration
 public class EmpChargecodeMasterApplication {
 

@@ -21,18 +21,35 @@ import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
  *
  */
 @RestController
+@RequestMapping(value="/chargecode")
 public class ChargeCodeMasterController {
 	public static final Logger log = LoggerFactory.getLogger(ChargeCodeMasterController.class);
 	
 	@Autowired
 	ChargeCodeService ChargeCodeService;
 	
-	@RequestMapping(value="/chargecodes", method=RequestMethod.GET)
+	/*@RequestMapping(value="/chargecodes/{chargeCode}", method=RequestMethod.GET)
 	public Collection<ChargeCode> getChargeCode(@PathVariable("chargeCode") String chargeCode){
 		
 		Collection<ChargeCode> chargeCodeList = this.ChargeCodeService.getChargeCode(chargeCode);
 		log.info("chargeCode: "+chargeCodeList);
 		
-		return null;
+		return chargeCodeList;
+	}*/
+	
+	@RequestMapping(value="/validate/{wbs}", method=RequestMethod.GET)
+	public boolean validateChargeCode(@PathVariable("wbs") String chargeCode){
+		
+		boolean isValid=this.ChargeCodeService.isValidChargeCode(chargeCode);
+		
+		return isValid;
+	}
+	
+	@RequestMapping(value="/auth/employee/{empid}/chargecode/{wbs}", method=RequestMethod.GET)
+	public boolean isChargeCodeAuthorized(@PathVariable("empid") String empid,@PathVariable("wbs") String chargeCode){
+		
+		boolean isValid=this.ChargeCodeService.isChargeCodeAuthorized(empid,chargeCode);
+		
+		return isValid;
 	}
 }

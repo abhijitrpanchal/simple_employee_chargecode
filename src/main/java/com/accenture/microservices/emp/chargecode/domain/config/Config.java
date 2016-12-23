@@ -16,19 +16,19 @@ import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepos
  */
 @Configuration
 @EnableCouchbaseRepositories
-public class Config extends AbstractCouchbaseConfiguration {
+public class Config  {
 
-    @Override
+    //@Override
     protected List<String> getBootstrapHosts() {
         return Arrays.asList("http://localhost:8091", "http://localhost:8091");
     }
 
-    @Override
+  //  @Override
     protected String getBucketName() {
         return "chargecode";
     }
 
-    @Override
+   // @Override
     protected String getBucketPassword() {
         return "ACC@123*";
     }
