@@ -3,7 +3,6 @@
  */
 package com.accenture.microservices.emp.chargecode.web;
 
-import java.util.Collection;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,35 +20,24 @@ import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
  *
  */
 @RestController
-@RequestMapping(value="/chargecode")
+@RequestMapping(value="/chargecodes")
 public class ChargeCodeMasterController {
 	public static final Logger log = LoggerFactory.getLogger(ChargeCodeMasterController.class);
 	
 	@Autowired
 	ChargeCodeService ChargeCodeService;
+
 	
-	/*@RequestMapping(value="/chargecodes/{chargeCode}", method=RequestMethod.GET)
-	public Collection<ChargeCode> getChargeCode(@PathVariable("chargeCode") String chargeCode){
+	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
+	public ChargeCode validateChargeCode(@PathVariable("wbs") String chargeCode){
 		
-		Collection<ChargeCode> chargeCodeList = this.ChargeCodeService.getChargeCode(chargeCode);
-		log.info("chargeCode: "+chargeCodeList);
-		
-		return chargeCodeList;
-	}*/
-	
-	@RequestMapping(value="/validate/{wbs}", method=RequestMethod.GET)
-	public boolean validateChargeCode(@PathVariable("wbs") String chargeCode){
-		
-		boolean isValid=this.ChargeCodeService.isValidChargeCode(chargeCode);
-		
-		return isValid;
+		return this.ChargeCodeService.getChargeCode(chargeCode);
+
 	}
 	
-	@RequestMapping(value="/auth/employee/{empid}/chargecode/{wbs}", method=RequestMethod.GET)
-	public boolean isChargeCodeAuthorized(@PathVariable("empid") String empid,@PathVariable("wbs") String chargeCode){
+	@RequestMapping(value="/{wbs}/employees/{empid}", method=RequestMethod.GET)
+	public ChargeCode isChargeCodeAuthorized(@PathVariable("wbs") String chargeCode,@PathVariable("empid") Integer empid){
 		
-		boolean isValid=this.ChargeCodeService.isChargeCodeAuthorized(empid,chargeCode);
-		
-		return isValid;
+		return this.ChargeCodeService.getChargeCode(chargeCode,empid);
 	}
 }

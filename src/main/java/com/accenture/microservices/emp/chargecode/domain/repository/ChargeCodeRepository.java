@@ -28,7 +28,7 @@ public  class ChargeCodeRepository {
    public  List<ChargeCode> findByChargeCode(String chargeCode){
     	
     	List list=new ArrayList();
-    	list.add(new ChargeCode(1000,"AA12IB","COE","Accenture","Valid"));
+    	//list.add(new ChargeCode(1000,"AA12IB","COE","Accenture","Valid"));
     	return list;
     }
 }
