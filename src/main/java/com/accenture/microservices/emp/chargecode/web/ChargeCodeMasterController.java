@@ -40,4 +40,6 @@ public class ChargeCodeMasterController {
 		
 		return this.ChargeCodeService.getChargeCode(chargeCode,empid);
 	}
+	
+	
 }
