@@ -1,6 +1,14 @@
-server.port=8082
+server:
+  port: 8082
 # LOGGING
-logging.path=log
-logging.file=log/application.log
+logging:
+  path: log
+  file: log/application.log
 # levels for loggers, e.g. "logging.level.org.springframework=DEBUG" (TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF)
-logging.level.org.springframework=INFO
+  level.org.springframework: INFO
+
+# eureka server registration
+eureka:
+    client:
+        serviceUrl:
+             defaultZone: http://54.90.195.96/eureka/

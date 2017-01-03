@@ -31,10 +31,7 @@ public class ChargeCodeService {
 		this.chargeCodeRepository = chargeCodeRepository;
 	}
 	
-//	public Collection<ChargeCode> getChargeCode(String chargeCode){
-//		Collection<ChargeCode> chargeCodeList = chargeCodeRepository.findByChargeCode(chargeCode);
-//		return chargeCodeList;
-//	}
+
 	
 	public boolean isValidChargeCode(String chargeCode){
 		
