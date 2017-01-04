@@ -146,7 +146,7 @@ public class ChargeCodeService {
 	}
 	
 	/* This method will return a unknown charge code object if the getChargeCode() fails for any reason */
-	public ChargeCode handleIsChargeCodeExist(){
+	public ChargeCode handleIsChargeCodeExist(String chargeCode){
 		
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode("unknown");
