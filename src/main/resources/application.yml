@@ -9,6 +9,8 @@ logging:
 
 # eureka server registration
 eureka:
-    client:
-        serviceUrl:
-             defaultZone: http://54.90.195.96/eureka/
+  instance:
+    hostname: 54.90.195.96
+  client:
+    serviceUrl:
+      defaultZone: http://54.90.195.96/eureka/

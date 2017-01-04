@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import com.accenture.microservices.emp.chargecode.domain.repository.ChargeCodeRepository;
 import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
 import com.accenture.microservices.emp.chargecode.domain.vo.Employee;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
  * @author j.venugopalan
@@ -56,7 +57,15 @@ public class ChargeCodeService {
 		return isValid;
 	}
 	
+	/**
+	   * This is method returns ChargeCode object for a charge code .
+	   * @param null  .
+	   * @return ChargeCode.
+	   * @exception nothing.
+	   * @fallbackMethod handleIsChargeCodeExist
+	 */
 	
+	@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
 	public ChargeCode getChargeCode(String chargeCode){
 		
 		ChargeCode chargeCodeObj=new ChargeCode();
@@ -89,7 +98,15 @@ public class ChargeCodeService {
 		
 	}
 	
+	/**
+	   * This is method returns ChargeCode object for a charge code and employee id .
+	   * @param chargeCode,employyeId .
+	   * @return ChargeCode.
+	   * @exception nothing.
+	   * @fallbackMethod handleIsChargeCodeAuthorised
+	 */
 	
+	@HystrixCommand(fallbackMethod="handleIsChargeCodeAuthorised")
 	public ChargeCode getChargeCode(String chargeCode,Integer employyeId){
 	
 	
@@ -126,6 +143,34 @@ public class ChargeCodeService {
 		chargeCodeObj.getAuthorizedEmployees().add(empObj);
 		
 		return chargeCodeObj;
+	}
+	
+	/* This method will return a unknown charge code object if the getChargeCode() fails for any reason */
+	public ChargeCode handleIsChargeCodeExist(){
+		
+		ChargeCode chargeCodeObj=new ChargeCode();
+		chargeCodeObj.setChargeCode("unknown");
+		chargeCodeObj.setCompany("unknown");
+		chargeCodeObj.setEngagement("unknown");
+		chargeCodeObj.setStatus("unknown");
+		chargeCodeObj.setAuthorizedEmployees(new ArrayList());
+		
+		return chargeCodeObj;
+		
+	}
+	
+	
+	public ChargeCode handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId){
+		
+		ChargeCode chargeCodeObj=new ChargeCode();
+		chargeCodeObj.setChargeCode("unknown");
+		chargeCodeObj.setCompany("unknown");
+		chargeCodeObj.setEngagement("unknown");
+		chargeCodeObj.setStatus("unknown");
+		chargeCodeObj.setAuthorizedEmployees(new ArrayList());
+		
+		return chargeCodeObj;
+		
 	}
 
 	
