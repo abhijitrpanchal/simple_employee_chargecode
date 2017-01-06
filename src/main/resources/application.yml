@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8080
 # LOGGING
 logging:
   path: log
@@ -10,7 +10,7 @@ logging:
 # eureka server registration
 eureka:
   instance:
-    hostname: 54.90.195.96
+    hostname: 52.7.102.164
   client:
     serviceUrl:
-      defaultZone: http://54.90.195.96/eureka/
+      defaultZone: http://52.7.102.164:8787/eureka/
