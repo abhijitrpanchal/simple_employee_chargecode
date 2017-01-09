@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 0
 # LOGGING
 logging:
   path: log
@@ -8,9 +8,18 @@ logging:
   level.org.springframework: INFO
 
 # eureka server registration
+# register with eureka
+
 eureka:
   instance:
-    hostname: 54.90.195.96
+    hostname: 52.7.102.164
   client:
     serviceUrl:
-      defaultZone: http://54.90.195.96/eureka/
+      defaultZone: http://52.7.102.164:8787/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
