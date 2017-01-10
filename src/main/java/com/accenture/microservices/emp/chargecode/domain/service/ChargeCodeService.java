@@ -75,7 +75,7 @@ public class ChargeCodeService {
 	@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
 	public ChargeCode getChargeCode(String chargeCode){
 		
-		if(true) throw new RuntimeException();
+	
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode(chargeCode);
 		chargeCodeObj.setCompany("Accentre");
