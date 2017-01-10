@@ -1,5 +1,6 @@
 server:
   port: 0
+
 # LOGGING
 logging:
   path: log
@@ -11,13 +12,18 @@ logging:
 # register with eureka
 
 eureka:
-  client:
+   instance:
+    hostname: 52.7.102.164
+   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://52.7.102.164:8787/eureka/
+      
 hystrix:
   command:
     default:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 40000
+            timeoutInMilliseconds: 60000
+
+
