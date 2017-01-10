@@ -3,19 +3,24 @@
  */
 package com.accenture.microservices.emp.chargecode.domain.service;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accenture.microservices.emp.chargecode.domain.repository.ChargeCodeRepository;
 import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
 import com.accenture.microservices.emp.chargecode.domain.vo.Employee;
+import com.accenture.microservices.emp.chargecode.web.ChargeCodeMasterController;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
@@ -24,6 +29,8 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
  */
 @Service
 public class ChargeCodeService {
+	
+	public static final Logger log = LoggerFactory.getLogger(ChargeCodeService.class);
 
 	private final ChargeCodeRepository chargeCodeRepository;
 	
@@ -68,6 +75,7 @@ public class ChargeCodeService {
 	@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
 	public ChargeCode getChargeCode(String chargeCode){
 		
+		if(true) throw new RuntimeException();
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode(chargeCode);
 		chargeCodeObj.setCompany("Accentre");
@@ -146,8 +154,9 @@ public class ChargeCodeService {
 	}
 	
 	/* This method will return a unknown charge code object if the getChargeCode() fails for any reason */
-	public ChargeCode handleIsChargeCodeExist(String chargeCode){
+	public ChargeCode handleIsChargeCodeExist(String chargeCode,Throwable t){
 		
+		log.info("fallback method handleIsChargeCodeExist called,the error thrown is1: "+getErrorStackTrace(t));
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode("unknown");
 		chargeCodeObj.setCompany("unknown");
@@ -160,7 +169,9 @@ public class ChargeCodeService {
 	}
 	
 	
-	public ChargeCode handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId){
+	public ChargeCode handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId,Throwable t){
+		
+		log.info("fallback method called for getChargeCode() ,the error thrown is: "+getErrorStackTrace(t));
 		
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode("unknown");
@@ -170,6 +181,19 @@ public class ChargeCodeService {
 		chargeCodeObj.setAuthorizedEmployees(new ArrayList());
 		
 		return chargeCodeObj;
+		
+	}
+	
+	public String getErrorStackTrace(Throwable t){
+		
+		if(t!=null){
+			StringWriter sw = new StringWriter();
+			PrintWriter pw = new PrintWriter(sw);
+			t.printStackTrace(pw);
+			return sw.toString();
+		}else {
+			return null;
+		}
 		
 	}
 

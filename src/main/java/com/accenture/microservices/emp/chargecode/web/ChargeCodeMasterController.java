@@ -33,6 +33,7 @@ public class ChargeCodeMasterController {
 	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
 	public ChargeCode validateChargeCode(@PathVariable("wbs") String chargeCode){
 		
+		log.info("Inside validateChargeCode");
 		return this.ChargeCodeService.getChargeCode(chargeCode);
 
 	}
@@ -40,6 +41,7 @@ public class ChargeCodeMasterController {
 	@RequestMapping(value="/{wbs}/employees/{empid}", method=RequestMethod.GET)
 	public ChargeCode isChargeCodeAuthorized(@PathVariable("wbs") String chargeCode,@PathVariable("empid") Integer empid){
 		
+		log.info("Inside isChargeCodeAuthorized");
 		return this.ChargeCodeService.getChargeCode(chargeCode,empid);
 	}
 	
