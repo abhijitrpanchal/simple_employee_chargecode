@@ -11,11 +11,9 @@ logging:
 # register with eureka
 
 eureka:
-  instance:
-    hostname: 52.7.102.164
   client:
     serviceUrl:
-      defaultZone: http://52.7.102.164:8787/eureka/
+      defaultZone: http://localhost:8761/eureka/
 hystrix:
   command:
     default:
