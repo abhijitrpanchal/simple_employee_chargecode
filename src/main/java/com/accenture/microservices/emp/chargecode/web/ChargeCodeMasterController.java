@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.accenture.microservices.emp.chargecode.domain.service.ChargeCodeService;
 import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+
 
 /**
  * @author j.venugopalan
@@ -25,14 +29,18 @@ import com.accenture.microservices.emp.chargecode.domain.vo.ChargeCode;
  */
 
 @RestController
-@RequestMapping(value="/chargecodes")
+@RequestMapping(value="/chargecodes",produces = "application/json")
+@Api(tags = "Employee Charge Code API")
+
+//@Api(decscription = "Employee Charge Code Service")
 public class ChargeCodeMasterController {
+	
 	public static final Logger log = LoggerFactory.getLogger(ChargeCodeMasterController.class);
 	
 	@Autowired
 	ChargeCodeService ChargeCodeService;
-
 	
+	@ApiOperation(value = "EmployeeChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
 	public ChargeCode validateChargeCode(@PathVariable("wbs") String chargeCode){
 		
@@ -41,6 +49,7 @@ public class ChargeCodeMasterController {
 
 	}
 	
+	@ApiOperation(value = "ChargeCodeDetails", nickname = "ChargeCodeDetails")
 	@RequestMapping(value="/{wbs}/employees/{empid}", method=RequestMethod.GET)
 	public ChargeCode isChargeCodeAuthorized(@PathVariable("wbs") String chargeCode,@PathVariable("empid") Integer empid){
 		
