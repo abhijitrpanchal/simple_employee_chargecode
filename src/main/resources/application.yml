@@ -1,5 +1,20 @@
 server:
   port: 8090
+  
+security:
+  oauth2:
+    resource:
+      jwt:
+        keyValue: 
+           -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgmmM/oDhHtBC3vBWYuyb
+          2vqQd2J5DQJN4Y/BPvEq57Q9sSPJ2lIGVitvyz+2H3cJb+6j6U2RrwBwh2BY+al2
+          1t5ltcGLmIGh4bFG5HpcnLUZs9KXmwoq0WGF/4GEma6PY9e03s2iny3NBf1SSB3D
+          tVefudxKHSUgTfLR2lTLRR4lx5Kcid/cJkLp4v00clKVdHAWCkwotJmfunL00Fb6
+          aEaLb+OtI9u3yMJLeBnC39qjsc2jsZPz8nSAl+j2BzN81X5uQFUbzgXYhMk24aHJ
+          ZdKeMI99xFyarpneOFVgppD/15gzUHyAHjw+NKlK9oNMvtVFST+KKjyAK7DCZyqv
+          sQIDAQAB
+          -----END PUBLIC KEY-----
 
 # LOGGING
 logging:
