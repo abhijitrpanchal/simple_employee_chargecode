@@ -44,7 +44,7 @@ public class ChargeCodeMasterController {
 	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
 	public ChargeCode validateChargeCode(@PathVariable("wbs") String chargeCode){
 		
-		log.info("Inside validateChargeCode");
+		log.info("Inside ChargeCodeMasterController validateChargeCode WBS entered ::" + chargeCode);
 		return this.ChargeCodeService.getChargeCode(chargeCode);
 
 	}
