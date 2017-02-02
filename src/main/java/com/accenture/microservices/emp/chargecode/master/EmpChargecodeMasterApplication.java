@@ -23,6 +23,11 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import springfox.documentation.service.Tag;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
  
 
 //@SpringBootApplication(scanBasePackages = {"com.accenture.microservices.emp.chargecode"})
@@ -31,8 +36,26 @@ import springfox.documentation.service.Tag;
 @EnableCircuitBreaker
 @EnableDiscoveryClient
 @EnableSwagger2
-//@ComponentScan("import static springfox.documentation.builders.PathSelectors.regex")		
+//@ComponentScan("import static springfox.documentation.builders.PathSelectors.regex")	
+@EnableResourceServer
 public class EmpChargecodeMasterApplication {
+	
+	
+	@Configuration
+	protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
+
+	    @Override
+	    public void configure(HttpSecurity http) throws Exception {
+	    
+			 http
+	            .authorizeRequests().antMatchers("/hystrix.stream").permitAll()
+			.and()
+	   
+	            .authorizeRequests().anyRequest().authenticated();
+	    
+	}
+	    
+}
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmpChargecodeMasterApplication.class, args);
