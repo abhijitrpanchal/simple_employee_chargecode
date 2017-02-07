@@ -25,7 +25,7 @@ logging:
   
 info.app.name: API for Chargecode Details
 info.app.project: Lean Architecture
-info.app.description: This is the REST full API service to disply the employee data.
+info.app.description: This is the REST full API service to display the employee data.
 info.app.swaggerapi.url: http://54.208.170.219/chargecodes-api/swagger-ui.html
 
 # eureka server registration

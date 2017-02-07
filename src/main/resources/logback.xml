@@ -1,5 +1,7 @@
 <configuration>
-    <property name="LOG_PATH" value="log/application.log" />
+	    <property name="LOG_PATH" value="log/application.log" />
+	    
+	  
     
 <!--     <appender name="jsonAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"> -->
 <!--         <File>${LOG_PATH}</File> -->
@@ -13,22 +15,33 @@
 <!--         </triggeringPolicy> -->
 <!--     </appender> -->
 
-    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
-       <encoder class="net.logstash.logback.encoder.LogstashEncoder"/> -->
+   <!--  <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+       <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
 			<encoder>
 				<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
 			</encoder>
-    </appender>
+    </appender> -->
+    
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender"> 
+     <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
+     <encoder>
+	    <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
+	  </encoder>
+	</appender>
 
+  
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
       <file>${LOG_PATH}</file>
       <append>true</append>
-      <encoder>
-         <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
-      </encoder>
+     <!--  <encoder>
+         <pattern>%-4relative [%thread] %-5level %logger{35} - Correlation Id: %X{CorrelationId}- %msg%n</pattern>
+      </encoder> -->
+       <encoder>
+	     <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
+	  </encoder>
    </appender>
     
-        
+    
 <!--         <appender name="STASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender"> -->
 <!--         <destination>52.7.102.164:5000</destination> -->
 
@@ -50,12 +63,16 @@
 <!--             </providers> -->
 <!--         </encoder> -->
 <!--     </appender> -->
+		<!-- <conversionRule conversionWord="syslogStart" converterClass="ch.qos.logback.classic.pattern.SyslogStartConverter"/> -->
  		<appender name="STASH" class="net.logstash.logback.appender.LogstashSocketAppender">
 				<host>54.208.170.219</host>
 				 <port>25826</port>
-<!--               <customFields>{"appname":"product-ms"}</customFields>  -->
+                 <customFields>{"appname":"emp-chargecode-ms"}</customFields> 
+                <!--<prefix class="ch.qos.logback.classic.PatternLayout" >
+       				 <pattern>%syslogStart{LOCAL5}</pattern>
+       			  <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
+    			</prefix>-->
      	</appender>
-	
 
 <!--     <logger name="jsonLogger" additivity="false" level="DEBUG"> -->
 <!--         <appender-ref ref="jsonAppender"/> -->
@@ -67,3 +84,4 @@
          <appender-ref ref="consoleAppender"/>
     </root>
 </configuration>
+
