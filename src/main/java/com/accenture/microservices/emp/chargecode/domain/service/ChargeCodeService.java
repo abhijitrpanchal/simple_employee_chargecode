@@ -74,7 +74,9 @@ public class ChargeCodeService {
 	
 	@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
 	public ChargeCode getChargeCode(String chargeCode){
+		log.debug("ChargeCodeService: getChargeCode Start" + chargeCode);
 		
+		log.info("ChargeCodeService: chargecode=" + chargeCode);
 	
 		ChargeCode chargeCodeObj=new ChargeCode();
 		chargeCodeObj.setChargeCode(chargeCode);
@@ -98,6 +100,8 @@ public class ChargeCodeService {
 		chargeCodeObj.getAuthorizedEmployees().add(empObj);
 		
 		List<String> invalidChargeCode = Arrays.asList("AI50000", "BN124444", "CD661234");
+		
+		log.debug("ChargeCodeService: getChargeCode End" + chargeCode);
 		if (invalidChargeCode.contains(chargeCode))
 			return null ;
 		else 
@@ -117,9 +121,9 @@ public class ChargeCodeService {
 	@HystrixCommand(fallbackMethod="handleIsChargeCodeAuthorised")
 	public ChargeCode getChargeCode(String chargeCode,Integer employyeId){
 	
+		log.debug("ChargeCodeService: getChargeCode Start");
 	
-	
-	
+		log.debug("ChargeCodeService: chargeCode="+chargeCode+" employyeId ="+employyeId);
 		Map<String,List<String>> empChargeCodeMap = new HashMap<String,List<String>>();
 		empChargeCodeMap.put("10000000", Arrays.asList("AAAAAAAA", "BBBBBBBB", "CCCCCCCC"));
 		empChargeCodeMap.put("10000001", Arrays.asList("AAAAAAAA", "BBBBBBBB", "CCCCCCCC"));
@@ -150,11 +154,15 @@ public class ChargeCodeService {
 		empObj.setAddress("Bangalore");
 		chargeCodeObj.getAuthorizedEmployees().add(empObj);
 		
+		log.debug("ChargeCodeService: getChargeCode End");
+		
 		return chargeCodeObj;
 	}
 	
 	/* This method will return a unknown charge code object if the getChargeCode() fails for any reason */
 	public ChargeCode handleIsChargeCodeExist(String chargeCode,Throwable t){
+		
+		log.debug("ChargeCodeService: handleIsChargeCodeExist Start");
 		
 		log.info("fallback method handleIsChargeCodeExist called,the error thrown is1: "+getErrorStackTrace(t));
 		ChargeCode chargeCodeObj=new ChargeCode();
@@ -164,12 +172,15 @@ public class ChargeCodeService {
 		chargeCodeObj.setStatus("unknown");
 		chargeCodeObj.setAuthorizedEmployees(new ArrayList());
 		
+		log.debug("ChargeCodeService: handleIsChargeCodeExist End");
 		return chargeCodeObj;
 		
 	}
 	
 	
 	public ChargeCode handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId,Throwable t){
+		
+		log.debug("ChargeCodeService: handleIsChargeCodeAuthorised Start");
 		
 		log.info("fallback method called for getChargeCode() ,the error thrown is: "+getErrorStackTrace(t));
 		
@@ -179,6 +190,8 @@ public class ChargeCodeService {
 		chargeCodeObj.setEngagement("unknown");
 		chargeCodeObj.setStatus("unknown");
 		chargeCodeObj.setAuthorizedEmployees(new ArrayList());
+		
+		log.debug("ChargeCodeService: handleIsChargeCodeAuthorised End");
 		
 		return chargeCodeObj;
 		

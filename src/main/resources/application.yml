@@ -22,6 +22,11 @@ logging:
   file: log/application.log
 # levels for loggers, e.g. "logging.level.org.springframework=DEBUG" (TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF)
   level.org.springframework: INFO
+  
+info.app.name: API for Chargecode Details
+info.app.project: Lean Architecture
+info.app.description: This is the REST full API service to display the employee data.
+info.app.swaggerapi.url: http://54.208.170.219/chargecodes-api/swagger-ui.html
 
 # eureka server registration
 # register with eureka
@@ -39,6 +44,6 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 6000
 
 
