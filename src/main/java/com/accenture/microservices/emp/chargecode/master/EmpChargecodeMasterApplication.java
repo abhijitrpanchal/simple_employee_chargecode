@@ -3,6 +3,7 @@ package com.accenture.microservices.emp.chargecode.master;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,9 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import static springfox.documentation.builders.PathSelectors.regex;
 
+import java.util.Arrays;
+
+import com.accenture.microservices.emp.details.CorrelationHeaderFilter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -60,7 +64,14 @@ public class EmpChargecodeMasterApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EmpChargecodeMasterApplication.class, args);
 	}
+	 @Bean
+	    public FilterRegistrationBean correlationHeaderFilter() {
+	        FilterRegistrationBean filterRegBean = new FilterRegistrationBean();
+	        filterRegBean.setFilter(new CorrelationHeaderFilter());
+	        filterRegBean.setUrlPatterns(Arrays.asList("/*"));
 
+	        return filterRegBean;
+	 }
 
 @Bean
 public Docket newAPIChargeCode() {
