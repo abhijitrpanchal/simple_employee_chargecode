@@ -1,5 +1,9 @@
 package com.accenture.microservices.emp.chargecode.master;
 
+import static springfox.documentation.builders.PathSelectors.regex;
+
+import java.util.Arrays;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,14 +11,13 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
-
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.stereotype.Component;
-import static springfox.documentation.builders.PathSelectors.regex;
 
-import java.util.Arrays;
-
-import com.accenture.microservices.emp.details.CorrelationHeaderFilter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -26,12 +29,6 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-import springfox.documentation.service.Tag;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
  
 
 //@SpringBootApplication(scanBasePackages = {"com.accenture.microservices.emp.chargecode"})
