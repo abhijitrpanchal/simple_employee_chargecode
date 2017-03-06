@@ -31,6 +31,8 @@ public class CorrelationHeaderFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
+    	
+    	LOGGER.debug("Inside method doFilter of  CorrelationHeaderFilter");
 
         final HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         String currentCorrId = httpServletRequest.getHeader(RequestCorrelation.CORRELATION_ID_HEADER);
