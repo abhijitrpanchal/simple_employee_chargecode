@@ -1,9 +1,12 @@
 package com.accenture.microservices.emp.chargecode.domain.Entity;
 
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 @Entity
 @Table(name = "EMPLOYEE")
@@ -19,10 +22,21 @@ public class EmployeeEntity {
 	
 	
 	
+	
 	public EmployeeEntity() {
 		
 		
 			
+	}
+	
+	public EmployeeEntity(Integer employeeId,String name,String address) {
+		
+		this.employeeId=employeeId;
+		this.name=name;
+		this.address=address;
+		
+				
+		
 	}
 	
 	

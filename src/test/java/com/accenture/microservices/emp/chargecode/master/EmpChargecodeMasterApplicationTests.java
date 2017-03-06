@@ -59,8 +59,8 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      */
 	@Test
 	public void validateChargeCode() throws Exception {
-		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAAAAA")));
-		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAAAAA")).andDo(print()).andReturn();
+		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA")));
+		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
 
@@ -91,8 +91,8 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      */
 	@Test
 	public void checkChargeCode() throws Exception {
-		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AI50000")));
-		MvcResult result = mockMvc.perform(get("/chargecodes/AI50000")).andDo(print()).andReturn();
+		log.info("Result::: "+mockMvc.perform(get("/chargecodes/A12345")));
+		MvcResult result = mockMvc.perform(get("/chargecodes/A12345")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
 
@@ -108,8 +108,8 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      */
 	@Test
 	public void isChargeCodeAuthorized()throws Exception {
-		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAAAAA/employees/10000000")));
-		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAAAAA/employees/10000000")).andDo(print()).andReturn();
+		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")));
+		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
 	
@@ -125,7 +125,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 	@Test
 	public void getChargecodeURLCheck() throws Exception {
 		log.info(" Inside getEmployeeDetailsURLCheck");
-		mockMvc.perform(get("/chargecodes/Details/AAAAAAAA")).andExpect(status().isNotFound()).andDo(print());
+		mockMvc.perform(get("/chargecodes/Details/AAAAA")).andExpect(status().isNotFound()).andDo(print());
 		
 	}
 

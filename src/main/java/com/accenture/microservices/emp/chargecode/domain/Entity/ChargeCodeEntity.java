@@ -1,6 +1,7 @@
 package com.accenture.microservices.emp.chargecode.domain.Entity;
 
 import java.util.Collection;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,7 +13,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "CHARGE_CODE")
+@Table(name = "CHARGECODE")
 public class ChargeCodeEntity {
 
 	@Id
@@ -28,7 +29,7 @@ public class ChargeCodeEntity {
 	
 	@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
-	private Collection<EmployeeEntity> authorizedEmployees;
+	private Set<EmployeeEntity> authorizedEmployees;
 	
 	
 	public ChargeCodeEntity() {
@@ -36,6 +37,19 @@ public class ChargeCodeEntity {
 		
 		
 	}
+	
+	
+	public ChargeCodeEntity(String chargeCode,String engagement,String company,String status,Set<EmployeeEntity> authorizedEmployees) {
+		
+		this.chargeCode=chargeCode;
+		this.engagement=engagement;
+		this.company=company;
+		this.status=status;
+		this.authorizedEmployees=authorizedEmployees;
+				
+		
+	}
+	
 	
 
 	public String getChargeCode() {
@@ -70,11 +84,11 @@ public class ChargeCodeEntity {
 		this.status = status;
 	}
 
-	public Collection<EmployeeEntity> getAuthorizedEmployees() {
+	public Set<EmployeeEntity> getAuthorizedEmployees() {
 		return authorizedEmployees;
 	}
 
-	public void setAuthorizedEmployees(Collection<EmployeeEntity> authorizedEmployees) {
+	public void setAuthorizedEmployees(Set<EmployeeEntity> authorizedEmployees) {
 		this.authorizedEmployees = authorizedEmployees;
 	}
 	
