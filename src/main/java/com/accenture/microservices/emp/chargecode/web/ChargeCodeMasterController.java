@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accenture.microservices.emp.chargecode.domain.service.ChargeCodeService;
-import com.accenture.microservices.emp.chargecode.master.dto.ChargeCodeDTO;
 import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.microservices.emp.chargecode.domain.dto.ChargeCodeDTO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -48,10 +48,13 @@ public class ChargeCodeMasterController {
 	
 	@ApiOperation(notes="This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.",value = "validateChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
-	public ChargeCodeEntity validateChargeCode(@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice",  required = true) @PathVariable("wbs") String chargeCode){
+	public ChargeCodeDTO  validateChargeCode(@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice",  required = true) @PathVariable("wbs") String chargeCode){
 		
 		log.info("Inside ChargeCodeMasterController validateChargeCode WBS entered ::" + chargeCode);
-		return this.ChargeCodeService.getChargeCode(chargeCode);
+		
+		ChargeCodeEntity chargeCodeEntity=this.ChargeCodeService.getChargeCode(chargeCode);
+		ChargeCodeDTO chargeDTO=convertChargeCodeEntityToDto(chargeCodeEntity);
+		return chargeDTO;
 
 	}
 	
@@ -62,11 +65,11 @@ public class ChargeCodeMasterController {
 		log.info("Inside isChargeCodeAuthorized");
 		ChargeCodeEntity chargeCodeEntity=ChargeCodeService.getChargeCode(chargeCode,empid);
 		
-		ChargeCodeDTO chargeDTO=convertToDto(chargeCodeEntity);
+		ChargeCodeDTO chargeDTO=convertChargeCodeEntityToDto(chargeCodeEntity);
 		return chargeDTO ;
 	}
 	
-	private ChargeCodeDTO convertToDto(ChargeCodeEntity chargeEntity) {
+	private ChargeCodeDTO convertChargeCodeEntityToDto(ChargeCodeEntity chargeEntity) {
 		ChargeCodeDTO chargeDTO = modelMapper.map(chargeEntity, ChargeCodeDTO.class);
 	    
 	    return chargeDTO;

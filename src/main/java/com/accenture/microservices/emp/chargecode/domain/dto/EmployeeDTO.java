@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.master.dto;
+package com.accenture.microservices.emp.chargecode.domain.dto;
 
 
 public class EmployeeDTO {
