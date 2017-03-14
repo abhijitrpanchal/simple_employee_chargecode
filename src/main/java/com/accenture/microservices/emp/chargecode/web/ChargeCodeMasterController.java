@@ -4,20 +4,21 @@
 package com.accenture.microservices.emp.chargecode.web;
 
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.accenture.microservices.emp.chargecode.domain.service.ChargeCodeService;
 import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
 import com.accenture.microservices.emp.chargecode.domain.dto.ChargeCodeDTO;
+import com.accenture.microservices.emp.chargecode.domain.service.ChargeCodeService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -74,6 +75,29 @@ public class ChargeCodeMasterController {
 	    
 	    return chargeDTO;
 	}
+	private Collection<ChargeCodeDTO> convertChargeCodeEntityListToDtoList(Collection<ChargeCodeEntity> chargeEntity) {
+		Collection<ChargeCodeDTO> chargeDTOList = new ArrayList<>();
+		ChargeCodeDTO chargeDTO = new ChargeCodeDTO();
+		for(ChargeCodeEntity che :chargeEntity){
+			chargeDTO = modelMapper.map(che, ChargeCodeDTO.class);
+			chargeDTOList.add(chargeDTO);
+		}
+	    return chargeDTOList;
+	}
 	
+	@RequestMapping(value="/[{wbs}]", method=RequestMethod.GET)
+	public Collection<ChargeCodeDTO> getChargeCodes( @PathVariable("wbs") String[] chargeCodes){
+		Collection<ChargeCodeDTO> chargeCodesList = new ArrayList<>();
+		Collection<String> chargeCodesArray = new ArrayList<>();
+		for(String value: chargeCodes){
+			chargeCodesArray.add(value);
+			log.info("received list: "+value);
+		}
+		Collection<ChargeCodeEntity> chargeCodeEntity = new ArrayList<>();
+		chargeCodeEntity = ChargeCodeService.getChargeCodes(chargeCodesArray);
+		Collection<ChargeCodeDTO> chargeDTO = convertChargeCodeEntityListToDtoList(chargeCodeEntity);
+		return chargeDTO;
+
+	}
 	
 }

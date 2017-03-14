@@ -5,14 +5,17 @@ package com.accenture.microservices.emp.chargecode.domain.service;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.accenture.microservices.emp.chargecode.domain.repository.ChargeCodeRepository;
 import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.microservices.emp.chargecode.domain.repository.ChargeCodeRepository;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
@@ -100,7 +103,26 @@ public class ChargeCodeService {
 		}
 		
 	}
-
+	//@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
+	public Collection<ChargeCodeEntity> getChargeCodes(Collection<String> chargeCodes){
+		log.debug("ChargeCodeService: getChargeCode Start" + chargeCodes);
+		
+		Collection<String> invalidChargeCode = Arrays.asList("AI50000", "BN124444", "CD661234");
+		Collection<ChargeCodeEntity> chargeCodeList = new ArrayList<>();
+		Boolean expectionStatus = false;
+		if(chargeCodes.contains(invalidChargeCode)){
+			expectionStatus = true;
+		}else{
+			expectionStatus = false;
+		}
+		
+		if(expectionStatus){
+			chargeCodeList.add(null);
+		}else{
+			chargeCodeList = chargeCodeRepository.findAll();
+		}
+			return chargeCodeList;
+	}
 	
 	
 	
