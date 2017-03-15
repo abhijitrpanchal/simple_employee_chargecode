@@ -47,7 +47,7 @@ public class ChargeCodeMasterController {
 	@Autowired
     private ModelMapper modelMapper;
 	
-	@ApiOperation(notes="This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.",value = "validateChargeCode", nickname = "EmployeeChargeCode")
+	/*@ApiOperation(notes="This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.",value = "validateChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value="/{wbs}", method=RequestMethod.GET)
 	public ChargeCodeDTO  validateChargeCode(@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice",  required = true) @PathVariable("wbs") String chargeCode){
 		
@@ -57,7 +57,7 @@ public class ChargeCodeMasterController {
 		ChargeCodeDTO chargeDTO=convertChargeCodeEntityToDto(chargeCodeEntity);
 		return chargeDTO;
 
-	}
+	}*/
 	
 	@ApiOperation(notes="This End point will check if the employee ID has access or is authorized  to the use the given WBS. WBS details are written in json format.",value = "isChargeCodeAuthorized", nickname = "ChargeCodeDetails")
 	@RequestMapping(value="/{wbs}/employees/{empid}", method=RequestMethod.GET)
@@ -85,9 +85,8 @@ public class ChargeCodeMasterController {
 	    return chargeDTOList;
 	}
 	
-	@RequestMapping(value="/[{wbs}]", method=RequestMethod.GET)
-	public Collection<ChargeCodeDTO> getChargeCodes( @PathVariable("wbs") String[] chargeCodes){
-		Collection<ChargeCodeDTO> chargeCodesList = new ArrayList<>();
+	@RequestMapping(value="/{chargecodes}", method=RequestMethod.GET)
+	public Collection<ChargeCodeDTO> getChargeCodes( @PathVariable("chargecodes") String[] chargeCodes){
 		Collection<String> chargeCodesArray = new ArrayList<>();
 		for(String value: chargeCodes){
 			chargeCodesArray.add(value);
