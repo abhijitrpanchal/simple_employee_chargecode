@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.accenture.lari.chargecode.web;
+package com.accenture.lari.chargecode.resources;
 
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
-import com.accenture.lari.chargecode.domain.dto.ChargeCodeDTO;
+import com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
 
 import io.swagger.annotations.Api;

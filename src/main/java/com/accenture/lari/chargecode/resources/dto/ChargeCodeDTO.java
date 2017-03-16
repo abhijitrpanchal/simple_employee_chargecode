@@ -1,4 +1,4 @@
-package com.accenture.lari.chargecode.domain.dto;
+package com.accenture.lari.chargecode.resources.dto;
 
 import java.util.Collection;
 
