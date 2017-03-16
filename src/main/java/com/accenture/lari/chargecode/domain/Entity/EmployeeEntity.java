@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.domain.Entity;
+package com.accenture.lari.chargecode.domain.Entity;
 
 
 import java.util.Set;

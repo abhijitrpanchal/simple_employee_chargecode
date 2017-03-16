@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.accenture.microservices.emp.chargecode.web;
+package com.accenture.lari.chargecode.web;
 
 
 import java.util.ArrayList;
@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
-import com.accenture.microservices.emp.chargecode.domain.dto.ChargeCodeDTO;
-import com.accenture.microservices.emp.chargecode.domain.service.ChargeCodeService;
+import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.dto.ChargeCodeDTO;
+import com.accenture.lari.chargecode.service.ChargeCodeService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -90,7 +90,6 @@ public class ChargeCodeMasterController {
 		Collection<String> chargeCodesArray = new ArrayList<>();
 		for(String value: chargeCodes){
 			chargeCodesArray.add(value);
-			log.info("received list: "+value);
 		}
 		Collection<ChargeCodeEntity> chargeCodeEntity = new ArrayList<>();
 		chargeCodeEntity = ChargeCodeService.getChargeCodes(chargeCodesArray);

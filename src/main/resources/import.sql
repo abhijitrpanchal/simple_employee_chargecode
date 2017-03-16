@@ -6,6 +6,6 @@ insert into EMPLOYEE(employee_id, name, address) values ('13333', 'Sharukh', 'Ba
 insert into EMPLOYEE(employee_id, name, address) values ('12345', 'Aditya', 'Bangalore');
 insert into CHARGE_CODE_EMPLOYEE(charge_code,employee_id) values ('AAAAA', '1233');
 insert into CHARGE_CODE_EMPLOYEE(charge_code,employee_id) values ('A12345', '13333');
-insert into CHARGE_CODE_EMPLOYEE(charge_code,employee_id) values ('AB6578', '123456');
+insert into CHARGE_CODE_EMPLOYEE(charge_code,employee_id) values ('AB6578', '12345');
 commit;
 

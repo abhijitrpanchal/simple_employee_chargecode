@@ -1,11 +1,12 @@
 /**
  * 
  */
-package com.accenture.microservices.emp.chargecode.domain.repository;
+package com.accenture.lari.chargecode.domain.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
+
+import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
 
 
 /**

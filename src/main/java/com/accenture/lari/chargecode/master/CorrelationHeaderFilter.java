@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.master;
+package com.accenture.lari.chargecode.master;
 
 import java.io.IOException;
 import java.util.UUID;

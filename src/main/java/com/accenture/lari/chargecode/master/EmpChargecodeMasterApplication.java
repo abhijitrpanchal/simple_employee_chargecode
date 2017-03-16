@@ -1,13 +1,10 @@
-package com.accenture.microservices.emp.chargecode.master;
+package com.accenture.lari.chargecode.master;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.TreeSet;
 
 import org.modelmapper.ModelMapper;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,9 +21,6 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.stereotype.Component;
 
-import com.accenture.microservices.emp.chargecode.domain.Entity.ChargeCodeEntity;
-import com.accenture.microservices.emp.chargecode.domain.Entity.EmployeeEntity;
-import com.accenture.microservices.emp.chargecode.domain.repository.ChargeCodeRepository;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -40,14 +34,14 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
  
 
-@SpringBootApplication(scanBasePackages = { "com.accenture.microservices.emp.chargecode" })
+@SpringBootApplication(scanBasePackages = { "com.accenture.lari.chargecode" })
 @EnableAutoConfiguration
 @EnableCircuitBreaker
 @EnableDiscoveryClient
 @EnableSwagger2
 @EnableResourceServer
-@EntityScan(basePackages = {"com.accenture.microservices.emp.chargecode.domain"} )
-@EnableJpaRepositories(basePackages = {"com.accenture.microservices.emp.chargecode.domain"})
+@EntityScan(basePackages = {"com.accenture.lari.chargecode"} )
+@EnableJpaRepositories(basePackages = {"com.accenture.lari.chargecode"})
 public class EmpChargecodeMasterApplication {
 	
 	

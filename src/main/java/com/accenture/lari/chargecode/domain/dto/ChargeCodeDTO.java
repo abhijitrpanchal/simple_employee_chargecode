@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.domain.dto;
+package com.accenture.lari.chargecode.domain.dto;
 
 import java.util.Collection;
 
