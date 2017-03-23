@@ -41,8 +41,8 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	   * @fallbackMethod handleIsChargeCodeExist
 	 */
 	
-	@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
-	public ChargeCodeEntity getChargeCode(String chargeCode){
+	/*@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
+	public ChargeCodeEntity getChargeCodes(String chargeCode){
 		
 		log.debug("ChargeCodeServiceImpl: getChargeCode Start" + chargeCode);
 		ChargeCodeEntity chargecode =chargeCodeRepository.findByChargeCode(chargeCode);
@@ -51,7 +51,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 		
 		return chargecode;
 		
-	}
+	}*/
 	
 	/**
 	   * This is method returns ChargeCode object for a charge code and employee id .
@@ -123,7 +123,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 			chargeCodeList.add(null);
 		}else{
 			if(chargeCodes.size() ==1){
-				log.info("Single chargecode in sthe request");
+				log.debug("Single chargecode in sthe request");
 				String chargeCode = "";
 				for(String cc: chargeCodes){
 					chargeCode = cc;

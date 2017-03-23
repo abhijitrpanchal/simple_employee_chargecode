@@ -13,7 +13,9 @@ import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
  */
 public interface ChargeCodeService {
 	
-	public ChargeCodeEntity getChargeCode(String chargeCode,Integer employyeId);
+	//public ChargeCodeEntity getChargeCodes(String chargeCode);
+	
+	public ChargeCodeEntity getChargeCode(String chargeCode, Integer empId);
 	
 	public Collection<ChargeCodeEntity> getChargeCodes(Collection<String> chargeCodes);	
 
