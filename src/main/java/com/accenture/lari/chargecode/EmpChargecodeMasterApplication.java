@@ -1,4 +1,4 @@
-package com.accenture.lari.chargecode.master;
+package com.accenture.lari.chargecode;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -21,6 +21,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.stereotype.Component;
 
+import com.accenture.lari.utils.CorrelationHeaderFilter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -34,14 +35,13 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
  
 
-@SpringBootApplication(scanBasePackages = { "com.accenture.lari.chargecode" })
-@EnableAutoConfiguration
+@SpringBootApplication
 @EnableCircuitBreaker
 @EnableDiscoveryClient
 @EnableSwagger2
 @EnableResourceServer
-@EntityScan(basePackages = {"com.accenture.lari.chargecode"} )
-@EnableJpaRepositories(basePackages = {"com.accenture.lari.chargecode"})
+/*@EntityScan(basePackages = {"com.accenture.lari.chargecode"} )
+@EnableJpaRepositories(basePackages = {"com.accenture.lari.chargecode"})*/
 public class EmpChargecodeMasterApplication {
 	
 	
