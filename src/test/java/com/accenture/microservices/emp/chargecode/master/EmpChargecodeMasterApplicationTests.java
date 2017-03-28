@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -74,7 +73,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: null
      * @expected result: 404
      * 
-     */
+     *//*
 	@Test
 	public void validateChargeWithoutWBSCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes")));
@@ -82,7 +81,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 		log.info(result.getResponse().getContentAsString());
 	}
 
-	/**
+	*//**
      * 
      * @throws Exception
      * @Description: negative test case- Unit test with wrong  wbs
@@ -90,7 +89,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: null
      * @expected result: null
      * 
-     */
+     *//*
 	@Test
 	public void checkChargeCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/A12345")));
@@ -99,7 +98,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 	}
 
 	
-	 /**
+	 *//**
      * 
      * @throws Exception
      * @Description: positive test case- Unit test with parameter employeeId and WBS
@@ -107,28 +106,12 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: Arralylist of Authorized employees
      * @expected result: Arralylist of Authorized employees
      * 
-     */
+     *//*
 	@Test
 	public void isChargeCodeAuthorized()throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")));
 		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
-	}
+	}*/
 	
-	/**
-     * 
-     * @throws Exception
-     * @Description: negative test case- Unit test with parameter wbs
-     * @param: wbs
-     * @return: null
-     * @expected result: 404 
-     * 
-     */	
-	@Test
-	public void getChargecodeURLCheck() throws Exception {
-		log.info(" Inside getEmployeeDetailsURLCheck");
-		mockMvc.perform(get("/chargecodes/Details/AAAAA")).andExpect(status().isNotFound()).andDo(print());
-		
-	}
-
 }

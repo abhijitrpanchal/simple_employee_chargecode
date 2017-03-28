@@ -6,7 +6,6 @@ package com.accenture.lari.chargecode.resources;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
+import com.accenture.lari.chargecode.utility.ApplicationUtils;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -41,8 +41,11 @@ public class ChargeCodeMasterController {
 	@Autowired
 	ChargeCodeService ChargeCodeService;
 
+	/*@Autowired
+	private ModelMapper modelMapper;*/
+	
 	@Autowired
-	private ModelMapper modelMapper;
+	ApplicationUtils applicationUtils;
 
 	
 	/* @ApiOperation( notes="This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format."
@@ -70,17 +73,17 @@ public class ChargeCodeMasterController {
 		log.info("Inside isChargeCodeAuthorized");
 		ChargeCodeEntity chargeCodeEntity = ChargeCodeService.getChargeCode(chargeCode, empid);
 
-		ChargeCodeDTO chargeDTO = convertChargeCodeEntityToDto(chargeCodeEntity);
+		ChargeCodeDTO chargeDTO = applicationUtils.convertChargeCodeEntityToDto(chargeCodeEntity);
 		return chargeDTO;
 	}
 
-	private ChargeCodeDTO convertChargeCodeEntityToDto(ChargeCodeEntity chargeEntity) {
+	/*public ChargeCodeDTO convertChargeCodeEntityToDto(ChargeCodeEntity chargeEntity) {
 		ChargeCodeDTO chargeDTO = modelMapper.map(chargeEntity, ChargeCodeDTO.class);
 
 		return chargeDTO;
-	}
+	}*/
 
-	private Collection<ChargeCodeDTO> convertChargeCodeEntityListToDtoList(Collection<ChargeCodeEntity> chargeEntity) {
+	/*private Collection<ChargeCodeDTO> convertChargeCodeEntityListToDtoList(Collection<ChargeCodeEntity> chargeEntity) {
 		Collection<ChargeCodeDTO> chargeDTOList = new ArrayList<>();
 		ChargeCodeDTO chargeDTO = new ChargeCodeDTO();
 		for (ChargeCodeEntity che : chargeEntity) {
@@ -88,7 +91,7 @@ public class ChargeCodeMasterController {
 			chargeDTOList.add(chargeDTO);
 		}
 		return chargeDTOList;
-	}
+	}*/
 
 	@ApiOperation(notes = "This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.", value = "validateChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value = "/{chargecodes}", method = RequestMethod.GET)
@@ -101,7 +104,7 @@ public class ChargeCodeMasterController {
 		Collection<ChargeCodeEntity> chargeCodeEntity = new ArrayList<>();
 		log.debug("getChargeCodes: "+chargeCodesArray.size());
 		chargeCodeEntity = ChargeCodeService.getChargeCodes(chargeCodesArray);
-		Collection<ChargeCodeDTO> chargeDTO = convertChargeCodeEntityListToDtoList(chargeCodeEntity);
+		Collection<ChargeCodeDTO> chargeDTO = applicationUtils.convertChargeCodeEntityListToDtoList(chargeCodeEntity);
 		return chargeDTO;
 
 	}
