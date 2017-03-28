@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.accenture.lari.chargecode.domain.repository;
+package com.accenture.lari.chargecode.repository;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
