@@ -1,4 +1,4 @@
-package com.accenture.lari.chargecode.domain.Entity;
+package com.accenture.lari.chargecode.domain;
 
 
 import java.util.Set;

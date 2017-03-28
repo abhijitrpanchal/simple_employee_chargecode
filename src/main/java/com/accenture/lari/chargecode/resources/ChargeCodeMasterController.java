@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
 

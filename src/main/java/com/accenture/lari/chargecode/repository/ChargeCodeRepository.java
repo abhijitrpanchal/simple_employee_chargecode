@@ -6,7 +6,7 @@ package com.accenture.lari.chargecode.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 
 
 /**

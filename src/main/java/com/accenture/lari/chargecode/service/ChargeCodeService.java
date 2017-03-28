@@ -5,7 +5,7 @@ package com.accenture.lari.chargecode.service;
 
 import java.util.Collection;
 
-import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 
 /**
  * @author j.venugopalan

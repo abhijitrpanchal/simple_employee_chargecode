@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.accenture.lari.chargecode.domain.Entity.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.repository.ChargeCodeRepository;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
