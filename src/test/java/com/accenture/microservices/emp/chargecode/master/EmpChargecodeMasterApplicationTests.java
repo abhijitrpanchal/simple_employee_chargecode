@@ -1,10 +1,14 @@
 package com.accenture.microservices.emp.chargecode.master;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -22,6 +26,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.accenture.lari.chargecode.EmpChargecodeMasterApplication;
+import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.EmployeeEntity;
 
 
 
@@ -60,11 +66,44 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      */
 	@Test
 	public void validateChargeCode() throws Exception {
-		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA")));
-		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA")).andDo(print()).andReturn();
-		log.info(result.getResponse().getContentAsString());
+		//log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA")));
+		Collection<ChargeCodeEntity> charegcodeRefList = createChargeCodeObject();
+		MvcResult chareCodeEntityList = mockMvc.perform(get("/chargecodes/AAAAA")).andDo(print()).andReturn();
+		Collection<ChargeCodeEntity> newComapreObject=new ArrayList<ChargeCodeEntity>();
+		newComapreObject.addAll(charegcodeRefList);
+		assertThat(newComapreObject.equals(chareCodeEntityList));
 	}
 
+	/**
+	 * 
+	 * @return Collection<ChargeCodeDTO>
+	 * @Objective Generates Reference Chargecode object
+	 */
+	public Collection<ChargeCodeEntity> createChargeCodeObject(){
+		Collection<ChargeCodeEntity> chargeCodeDTO = new ArrayList<>();
+		//Collection<EmployeeEntity> employeeDtoList1 = new ArrayList<>();
+		//Collection<EmployeeEntity> employeeDtoList2 = new ArrayList<>();
+		//Collection<EmployeeEntity> employeeDtoList3 = new ArrayList<>();
+		
+		Set<EmployeeEntity> employeeDtoList1 = new HashSet<>();
+		Set<EmployeeEntity> employeeDtoList2 = new HashSet<>();
+		Set<EmployeeEntity> employeeDtoList3 = new HashSet<>();
+		
+		
+		EmployeeEntity employeeDto1 = new EmployeeEntity(12, "Anil", "Bangalore");
+		EmployeeEntity employeeDto2 = new EmployeeEntity(13333, "Sharukh", "Bangalore");
+		EmployeeEntity employeeDto3 = new EmployeeEntity(12345, "Aditya", "Bangalore");
+		employeeDtoList1.add(employeeDto1);
+		employeeDtoList2.add(employeeDto2);
+		employeeDtoList3.add(employeeDto3);
+		ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AA","COE","Accenture","Active",employeeDtoList1);
+		ChargeCodeEntity chargeCodeDto2 = new ChargeCodeEntity("A12345","COE","Accenture","Active",employeeDtoList2);
+		ChargeCodeEntity chargeCodeDto3 = new ChargeCodeEntity("AB657","COE","Accenture","Active",employeeDtoList3);
+		chargeCodeDTO.add(chargeCodeDto1);
+		chargeCodeDTO.add(chargeCodeDto2);
+		chargeCodeDTO.add(chargeCodeDto3);
+		return chargeCodeDTO;
+	}
 	/**
      * 
      * @throws Exception
