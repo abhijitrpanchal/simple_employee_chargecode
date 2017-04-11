@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
+import com.accenture.lari.chargecode.domain.EmployeeEntity;
 import com.accenture.lari.chargecode.repository.ChargeCodeRepository;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -65,21 +66,30 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	public ChargeCodeEntity getChargeCode(String chargeCode,Integer employyeId){
 	
 		log.debug("ChargeCodeServiceImpl: getChargeCode Start");
-		ChargeCodeEntity chargecode =chargeCodeRepository.findByChargeCodeAndAuthorizedEmployeesEmployeeId(chargeCode, employyeId);
-		log.debug("ChargeCodeServiceImpl: getChargeCode End");
-		
+		ChargeCodeEntity chargecode =chargeCodeRepository.findByChargeCode(chargeCode);
+		Collection<Integer> employeeIdList = new ArrayList<>();
+		if(chargecode != null){
+			for(EmployeeEntity ee : chargecode.getAuthorizedEmployees()){
+				log.debug("employee id: "+ee.getEmployeeId());
+				employeeIdList.add(ee.getEmployeeId());
+			}
+			if(!employeeIdList.contains(employyeId)){
+				chargecode = new ChargeCodeEntity();
+			}
+			log.debug("ChargeCodeServiceImpl: getChargeCode End");
+		}
 		return chargecode;
 	}
 	
 	/* This method will return a null object if the getChargeCode() fails for any reason */
-	public ChargeCodeEntity handleIsChargeCodeExist(String chargeCode,Throwable t){
+/*	public ChargeCodeEntity handleIsChargeCodeExist(String chargeCode,Throwable t){
 		
 		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeExist Start");
 		log.info("fallback method handleIsChargeCodeExist called,the error thrown is: "+getErrorStackTrace(t));
 		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeExist End");
 		return null;
 		
-	}
+	}*/
 	
 	/* This method will return a null object if the getChargeCode(String chargeCode,Integer employyeId) fails for any reason */
 	public ChargeCodeEntity handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId,Throwable t){
@@ -108,6 +118,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	public Collection<ChargeCodeEntity> getChargeCodes(Collection<String> chargeCodes){
 		log.debug("getChargeCodes ::: START");
 		Collection<String> invalidChargeCode = Arrays.asList("AI50000", "BN124444", "CD661234");
+		Collection<ChargeCodeEntity> chargeCodeListRetrived = new ArrayList<>();
 		Collection<ChargeCodeEntity> chargeCodeList = new ArrayList<>();
 		Boolean expectionStatus = false;
 		for(String exce: invalidChargeCode){
@@ -129,9 +140,11 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 					chargeCode = cc;
 				}
 				ChargeCodeEntity ce = chargeCodeRepository.findByChargeCode(chargeCode);
+				log.debug("chargecode retrived from DB: "+ce.toString());
 				chargeCodeList.add(ce);
 			}else{
-				chargeCodeList = chargeCodeRepository.findAll();	
+				chargeCodeListRetrived = (Collection<ChargeCodeEntity>) chargeCodeRepository.findAll();	
+				chargeCodeList = removeIrrelevantChargeCodeEntities(chargeCodeListRetrived,chargeCodes);
 			}
 		}
 		log.debug("getChargeCodes ::: END");
@@ -143,7 +156,27 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 		return nullChargeCodeEntity;
 	}
 	
-	
+	private Collection<ChargeCodeEntity> removeIrrelevantChargeCodeEntities(Collection<ChargeCodeEntity> chargeCodeList, Collection<String> chargeCodes){
+		Collection<ChargeCodeEntity> exclusionChargeCodeList = new ArrayList<>();
+		for(String cc : chargeCodes){
+			int count = 0;
+			for(ChargeCodeEntity ce : chargeCodeList){
+				log.info("Chargecode from entity: "+ce.getChargeCode()+" Chargecode from List: "+cc );
+				if(ce.getChargeCode().equals(cc)){
+						break;
+				}else{
+					log.info("Chargecode to be excluded");
+					count++;
+				}
+				if(count == chargeCodeList.size()){
+					exclusionChargeCodeList.add(ce);
+				}
+			}
+		}
+		log.info("exclusion list: "+exclusionChargeCodeList.toString());
+		chargeCodeList.removeAll(exclusionChargeCodeList);
+		return chargeCodeList;
+	}
 	
 	
 }

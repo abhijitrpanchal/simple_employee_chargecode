@@ -2,28 +2,27 @@ package com.accenture.lari.chargecode.domain;
 
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
 
-@Entity
-@Table(name = "CHARGECODE")
+import org.springframework.data.couchbase.core.mapping.Document;
+
+import com.couchbase.client.java.repository.annotation.Field;
+
+
+/*@Entity
+@Table(name = "CHARGECODE")*/
+@Document
 public class ChargeCodeEntity {
 
 	@Id
-	@Column(name = "charge_code")
+	//@Column(name = "charge_code")
+	@Field
 	private String chargeCode;
-
-	
+	@Field	
 	private String engagement;
-
+	@Field
 	private String company;
-
+	@Field
 	private String status;
 	
 	
@@ -38,9 +37,9 @@ public class ChargeCodeEntity {
 		this.authorizedEmployees = authorizedEmployees;
 	}
 
-	@ManyToMany(cascade = CascadeType.ALL)
+	/*@ManyToMany(cascade = CascadeType.ALL)
 	@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
-	private Set<EmployeeEntity> authorizedEmployees;
+*/	private Set<EmployeeEntity> authorizedEmployees;
 	
 	
 	public ChargeCodeEntity() {

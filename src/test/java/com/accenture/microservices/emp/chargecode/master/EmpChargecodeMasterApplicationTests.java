@@ -128,7 +128,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: null
      * @expected result: null
      * 
-     *//*
+     */
 	@Test
 	public void checkChargeCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/A12345")));
@@ -137,7 +137,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 	}
 
 	
-	 *//**
+	 /**
      * 
      * @throws Exception
      * @Description: positive test case- Unit test with parameter employeeId and WBS
@@ -145,12 +145,12 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: Arralylist of Authorized employees
      * @expected result: Arralylist of Authorized employees
      * 
-     *//*
+     */
 	@Test
 	public void isChargeCodeAuthorized()throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")));
 		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
-	}*/
+	}
 	
 }

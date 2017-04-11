@@ -1,24 +1,24 @@
 package com.accenture.lari.chargecode.domain;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
-@Entity
-@Table(name = "EMPLOYEE")
+
+import org.springframework.data.couchbase.core.mapping.Document;
+
+import com.couchbase.client.java.repository.annotation.Field;
+/*@Entity
+@Table(name = "EMPLOYEE")*/	
+@Document
 public class EmployeeEntity {
 	
 	@Id 
-	@Column(name = "employee_id")
+	//@Column(name = "employee_id")
+	@Field
 	private Integer employeeId;
-	
+	@Field
 	private String name;
-	
+	@Field
 	private String address;
-	
-	
-	
 	
 	public EmployeeEntity() {
 	}

@@ -39,7 +39,7 @@ public class ChargeCodeMasterController {
 	public static final Logger log = LoggerFactory.getLogger(ChargeCodeMasterController.class);
 
 	@Autowired
-	ChargeCodeService ChargeCodeService;
+	ChargeCodeService chargeCodeService;
 
 	/*@Autowired
 	private ModelMapper modelMapper;*/
@@ -47,21 +47,6 @@ public class ChargeCodeMasterController {
 	@Autowired
 	ApplicationUtils applicationUtils;
 
-	
-	/* @ApiOperation( notes="This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format."
-	 ,value = "validateChargeCode", nickname = "EmployeeChargeCode")
-	 
-	 @RequestMapping(value="/{wbs}", method=RequestMethod.GET) public
-	 ChargeCodeDTO validateChargeCode(@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice", required = true) @PathVariable("wbs") String chargeCode){
-	 
-	 log.info("Inside ChargeCodeMasterController validateChargeCode WBS entered ::"+ chargeCode);
-	 
-	 ChargeCodeEntity chargeCodeEntity=this.ChargeCodeService.getChargeCodes(chargeCode);
-	 ChargeCodeDTO chargeDTO=convertChargeCodeEntityToDto(chargeCodeEntity);
-	 return chargeDTO;
-	 
-	 }*/
-	 
 
 	@ApiOperation(notes = "This End point will check if the employee ID has access or is authorized  to the use the given WBS. WBS details are written in json format.", value = "isChargeCodeAuthorized", nickname = "ChargeCodeDetails")
 	@RequestMapping(value = "/{wbs}/employees/{empid}", method = RequestMethod.GET)
@@ -71,39 +56,25 @@ public class ChargeCodeMasterController {
 			throws Exception {
 
 		log.info("Inside isChargeCodeAuthorized");
-		ChargeCodeEntity chargeCodeEntity = ChargeCodeService.getChargeCode(chargeCode, empid);
-
-		ChargeCodeDTO chargeDTO = applicationUtils.convertChargeCodeEntityToDto(chargeCodeEntity);
+		ChargeCodeDTO chargeDTO = null;
+		ChargeCodeEntity chargeCodeEntity = chargeCodeService.getChargeCode(chargeCode, empid);
+		if(chargeCodeEntity != null){
+			chargeDTO = applicationUtils.convertChargeCodeEntityToDto(chargeCodeEntity);
+		}		
 		return chargeDTO;
 	}
-
-	/*public ChargeCodeDTO convertChargeCodeEntityToDto(ChargeCodeEntity chargeEntity) {
-		ChargeCodeDTO chargeDTO = modelMapper.map(chargeEntity, ChargeCodeDTO.class);
-
-		return chargeDTO;
-	}*/
-
-	/*private Collection<ChargeCodeDTO> convertChargeCodeEntityListToDtoList(Collection<ChargeCodeEntity> chargeEntity) {
-		Collection<ChargeCodeDTO> chargeDTOList = new ArrayList<>();
-		ChargeCodeDTO chargeDTO = new ChargeCodeDTO();
-		for (ChargeCodeEntity che : chargeEntity) {
-			chargeDTO = modelMapper.map(che, ChargeCodeDTO.class);
-			chargeDTOList.add(chargeDTO);
-		}
-		return chargeDTOList;
-	}*/
 
 	@ApiOperation(notes = "This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.", value = "validateChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value = "/{chargecodes}", method = RequestMethod.GET)
 	public Collection<ChargeCodeDTO> getChargeCodes(@PathVariable("chargecodes") String[] chargeCodesList) {
 		Collection<String> chargeCodesArray = new ArrayList<>();
-		log.debug("getChargeCodes: ");
+		log.info("getChargeCodes: ");
 		for (String value : chargeCodesList) {
 			chargeCodesArray.add(value);
 		}
 		Collection<ChargeCodeEntity> chargeCodeEntity = new ArrayList<>();
-		log.debug("getChargeCodes: "+chargeCodesArray.size());
-		chargeCodeEntity = ChargeCodeService.getChargeCodes(chargeCodesArray);
+		log.info("getChargeCodes: "+chargeCodesArray.size());
+		chargeCodeEntity = chargeCodeService.getChargeCodes(chargeCodesArray);
 		Collection<ChargeCodeDTO> chargeDTO = applicationUtils.convertChargeCodeEntityListToDtoList(chargeCodeEntity);
 		return chargeDTO;
 
