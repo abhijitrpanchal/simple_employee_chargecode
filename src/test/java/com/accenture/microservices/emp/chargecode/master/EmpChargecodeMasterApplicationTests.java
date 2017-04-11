@@ -155,10 +155,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @expected result: null
      * 
      */
-<<<<<<< HEAD
-=======
-	
->>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
+
 	@Test
 	public void checkChargeCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/A12345")));
@@ -176,19 +173,15 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @expected result: Arralylist of Authorized employees
      * 
      */
-<<<<<<< HEAD
-	@Test
-=======
+
 		@Test
->>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
+
 	public void isChargeCodeAuthorized()throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/employees/10000")));
 		MvcResult result = mockMvc.perform(get("/chargecodes/employees/10000")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
-<<<<<<< HEAD
-=======
-	
+
 	@Test
     public void chargecodeNotFound() throws Exception {
 
@@ -201,6 +194,6 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 		log.info("Chargecode not found");
                
     }
->>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
+
 	
 }
