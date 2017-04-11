@@ -3,11 +3,14 @@ package com.accenture.microservices.emp.chargecode.master;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.Before;
@@ -28,6 +31,8 @@ import org.springframework.web.context.WebApplicationContext;
 import com.accenture.lari.chargecode.EmpChargecodeMasterApplication;
 import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.domain.EmployeeEntity;
+import com.accenture.lari.chargecode.resources.dto.EmployeeDTO;
+//import com.accenture.lari.employees.domain.EmployeeDetails;
 
 
 
@@ -66,7 +71,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      */
 	@Test
 	public void validateChargeCode() throws Exception {
-		//log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA")));
+		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA")));
 		Collection<ChargeCodeEntity> charegcodeRefList = createChargeCodeObject();
 		MvcResult chareCodeEntityList = mockMvc.perform(get("/chargecodes/AAAAA")).andDo(print()).andReturn();
 		Collection<ChargeCodeEntity> newComapreObject=new ArrayList<ChargeCodeEntity>();
@@ -81,10 +86,9 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 	 */
 	public Collection<ChargeCodeEntity> createChargeCodeObject(){
 		Collection<ChargeCodeEntity> chargeCodeDTO = new ArrayList<>();
-		//Collection<EmployeeEntity> employeeDtoList1 = new ArrayList<>();
-		//Collection<EmployeeEntity> employeeDtoList2 = new ArrayList<>();
-		//Collection<EmployeeEntity> employeeDtoList3 = new ArrayList<>();
 		
+		
+		Collection<EmployeeEntity> employeeDTO = new ArrayList<>();
 		Set<EmployeeEntity> employeeDtoList1 = new HashSet<>();
 		Set<EmployeeEntity> employeeDtoList2 = new HashSet<>();
 		Set<EmployeeEntity> employeeDtoList3 = new HashSet<>();
@@ -96,14 +100,35 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 		employeeDtoList1.add(employeeDto1);
 		employeeDtoList2.add(employeeDto2);
 		employeeDtoList3.add(employeeDto3);
+		
+		
 		ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AA","COE","Accenture","Active",employeeDtoList1);
 		ChargeCodeEntity chargeCodeDto2 = new ChargeCodeEntity("A12345","COE","Accenture","Active",employeeDtoList2);
 		ChargeCodeEntity chargeCodeDto3 = new ChargeCodeEntity("AB657","COE","Accenture","Active",employeeDtoList3);
 		chargeCodeDTO.add(chargeCodeDto1);
 		chargeCodeDTO.add(chargeCodeDto2);
 		chargeCodeDTO.add(chargeCodeDto3);
-		return chargeCodeDTO;
+		return chargeCodeDTO; 
 	}
+	
+	public Collection<EmployeeEntity> createEmployeeObject(){
+		
+		Collection<EmployeeEntity> employeeDTO = new ArrayList<>();
+		Set<EmployeeEntity> employeeDtoList1 = new HashSet<>();
+		Set<EmployeeEntity> employeeDtoList2 = new HashSet<>();
+		Set<EmployeeEntity> employeeDtoList3 = new HashSet<>();
+		
+		
+		EmployeeEntity employeeDto1 = new EmployeeEntity(12, "Anil", "Bangalore");
+		EmployeeEntity employeeDto2 = new EmployeeEntity(13333, "Sharukh", "Bangalore");
+		EmployeeEntity employeeDto3 = new EmployeeEntity(12345, "Aditya", "Bangalore");
+		employeeDtoList1.add(employeeDto1);
+		employeeDtoList2.add(employeeDto2);
+		employeeDtoList3.add(employeeDto3);
+		return employeeDTO;
+		
+	}
+	
 	/**
      * 
      * @throws Exception
@@ -112,7 +137,8 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @return: null
      * @expected result: 404
      * 
-     *//*
+     */
+	
 	@Test
 	public void validateChargeWithoutWBSCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes")));
@@ -120,7 +146,7 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
 		log.info(result.getResponse().getContentAsString());
 	}
 
-	*//**
+	/**
      * 
      * @throws Exception
      * @Description: negative test case- Unit test with wrong  wbs
@@ -129,6 +155,10 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @expected result: null
      * 
      */
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
 	@Test
 	public void checkChargeCode() throws Exception {
 		log.info("Result::: "+mockMvc.perform(get("/chargecodes/A12345")));
@@ -146,11 +176,31 @@ public static final Logger log = LoggerFactory.getLogger(EmpChargecodeMasterAppl
      * @expected result: Arralylist of Authorized employees
      * 
      */
+<<<<<<< HEAD
 	@Test
+=======
+		@Test
+>>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
 	public void isChargeCodeAuthorized()throws Exception {
-		log.info("Result::: "+mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")));
-		MvcResult result = mockMvc.perform(get("/chargecodes/AAAAA/employees/10000")).andDo(print()).andReturn();
+		log.info("Result::: "+mockMvc.perform(get("/chargecodes/employees/10000")));
+		MvcResult result = mockMvc.perform(get("/chargecodes/employees/10000")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
+<<<<<<< HEAD
+=======
+	
+	@Test
+    public void chargecodeNotFound() throws Exception {
+
+		EmployeeEntity employeeDto1 = new EmployeeEntity(12, "Anil", "Bangalore");
+		Set<EmployeeEntity> employeeDtoList1 = new HashSet<>();
+		employeeDtoList1.add(employeeDto1);
+		ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AA","COE","Accenture","Active",employeeDtoList1);
+		//ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AA","COE","Accenture","Active",employeeDtoList1);
+		MvcResult result = mockMvc.perform(get("/chargecodes")).andExpect(status().isNotFound()).andDo(print()).andReturn();
+		log.info("Chargecode not found");
+               
+    }
+>>>>>>> 90345ab4a003e0770e59d102ed1d032c0ba54142
 	
 }
