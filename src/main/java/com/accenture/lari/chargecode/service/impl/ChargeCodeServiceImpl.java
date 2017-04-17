@@ -48,10 +48,10 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	/*@HystrixCommand(fallbackMethod="handleIsChargeCodeExist")
 	public ChargeCodeEntity getChargeCodes(String chargeCode){
 		
-		log.debug("ChargeCodeServiceImpl: getChargeCode Start" + chargeCode);
+		log.info("ChargeCodeServiceImpl: getChargeCode Start" + chargeCode);
 		ChargeCodeEntity chargecode =chargeCodeRepository.findByChargeCode(chargeCode);
 		log.info("ChargeCodeServiceImpl: chargecode=" + chargeCode);
-		log.debug("ChargeCodeServiceImpl: getChargeCode End" + chargeCode);
+		log.info("ChargeCodeServiceImpl: getChargeCode End" + chargeCode);
 		
 		return chargecode;
 		
@@ -68,18 +68,18 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	@HystrixCommand(fallbackMethod="handleIsChargeCodeAuthorised")
 	public ChargeCodeEntity getChargeCode(String chargeCode,Integer employyeId){
 	
-		log.debug("ChargeCodeServiceImpl: getChargeCode Start");
+		log.info("ChargeCodeServiceImpl: getChargeCode Start");
 		ChargeCodeEntity chargecode =chargeCodeRepository.findByChargeCode(chargeCode);
 		Collection<Integer> employeeIdList = new ArrayList<>();
 		if(chargecode != null){
 			for(EmployeeEntity ee : chargecode.getAuthorizedEmployees()){
-				log.debug("employee id: "+ee.getEmployeeId());
+				log.info("employee id: "+ee.getEmployeeId());
 				employeeIdList.add(ee.getEmployeeId());
 			}
 			if(!employeeIdList.contains(employyeId)){
 				chargecode = new ChargeCodeEntity();
 			}
-			log.debug("ChargeCodeServiceImpl: getChargeCode End");
+			log.info("ChargeCodeServiceImpl: getChargeCode End");
 		}
 		return chargecode;
 	}
@@ -87,9 +87,9 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	/* This method will return a null object if the getChargeCode() fails for any reason */
 /*	public ChargeCodeEntity handleIsChargeCodeExist(String chargeCode,Throwable t){
 		
-		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeExist Start");
+		log.info("ChargeCodeServiceImpl: handleIsChargeCodeExist Start");
 		log.info("fallback method handleIsChargeCodeExist called,the error thrown is: "+getErrorStackTrace(t));
-		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeExist End");
+		log.info("ChargeCodeServiceImpl: handleIsChargeCodeExist End");
 		return null;
 		
 	}*/
@@ -97,9 +97,9 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	/* This method will return a null object if the getChargeCode(String chargeCode,Integer employyeId) fails for any reason */
 	public ChargeCodeEntity handleIsChargeCodeAuthorised(String chargeCode,Integer employyeId,Throwable t){
 		
-		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeAuthorised Start");
+		log.info("ChargeCodeServiceImpl: handleIsChargeCodeAuthorised Start");
 		log.info("fallback method called for getChargeCode() ,the error thrown is: "+getErrorStackTrace(t));
-		log.debug("ChargeCodeServiceImpl: handleIsChargeCodeAuthorised End");
+		log.info("ChargeCodeServiceImpl: handleIsChargeCodeAuthorised End");
 		
 		return null;
 		
@@ -119,7 +119,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	}
 	@HystrixCommand(fallbackMethod="getChargeCodeFault")
 	public Collection<ChargeCodeEntity> getChargeCodes(Collection<String> chargeCodes){
-		log.debug("getChargeCodes ::: START");
+		log.info("getChargeCodes ::: START");
 		Collection<String> invalidChargeCode = Arrays.asList("AI50000", "BN124444", "CD661234");
 		Collection<ChargeCodeEntity> chargeCodeListRetrived = new ArrayList<>();
 		Collection<ChargeCodeEntity> chargeCodeList = new ArrayList<>();
@@ -132,25 +132,25 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 				expectionStatus = false;
 			}
 		}
-		log.debug("getChargeCodes ::: Invalid chargecode existance in request: "+expectionStatus);
+		log.info("getChargeCodes ::: Invalid chargecode existance in request: "+expectionStatus);
 		if(expectionStatus){
 			chargeCodeList.add(null);
 		}else{
 			if(chargeCodes.size() ==1){
-				log.debug("Single chargecode in sthe request");
+				log.info("Single chargecode in sthe request");
 				String chargeCode = "";
 				for(String cc: chargeCodes){
 					chargeCode = cc;
 				}
 				ChargeCodeEntity ce = chargeCodeRepository.findByChargeCode(chargeCode);
-				log.debug("chargecode retrived from DB: "+ce.toString());
+				log.info("chargecode retrived from DB: "+ce.toString());
 				chargeCodeList.add(ce);
 			}else{
 				chargeCodeListRetrived = (Collection<ChargeCodeEntity>) chargeCodeRepository.findAll();	
 				chargeCodeList = removeIrrelevantChargeCodeEntities(chargeCodeListRetrived,chargeCodes);
 			}
 		}
-		log.debug("getChargeCodes ::: END");
+		log.info("getChargeCodes ::: END");
 		return chargeCodeList;
 	}
 	
