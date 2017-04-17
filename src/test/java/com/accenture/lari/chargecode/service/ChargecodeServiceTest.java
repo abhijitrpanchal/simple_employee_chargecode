@@ -1,12 +1,12 @@
-package com.accenture.microservices.emp.chargecode.master.service;
+package com.accenture.lari.chargecode.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Matchers.any;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
@@ -21,15 +21,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.domain.EmployeeEntity;
 import com.accenture.lari.chargecode.repository.ChargeCodeRepository;
-import com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO;
-import com.accenture.lari.chargecode.resources.dto.EmployeeDTO;
 import com.accenture.lari.chargecode.service.impl.ChargeCodeServiceImpl;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ChargeCodeServiceImpl.class)
 public class ChargecodeServiceTest {
 	public static final Logger log = LoggerFactory.getLogger(ChargecodeServiceTest.class);
-	@Autowired
+	@MockBean
 	ChargeCodeServiceImpl chargeCodeService;
 	
 	@MockBean
@@ -43,7 +41,8 @@ public class ChargecodeServiceTest {
 		chargeCodesArray.add("AAAAA");
 		chargeCodesArray.add("A12345");
 		chargeCodesArray.add("AB6578");
-		given(this.chargeCodeService.getChargeCodes(chargeCodesArray)).willReturn(chareCodeRefEntityList);
+		given(this.chargeCodeService.getChargeCodes(any(Collection.class))).willReturn(chareCodeRefEntityList);
+		//given(this.chargeCodeRepository.findAll()).willReturn(chareCodeRefEntityList);
 		Collection<ChargeCodeEntity> chareCodeEntityList = this.chargeCodeService.getChargeCodes(chargeCodesArray);
 		log.info("from service layer: "+chareCodeEntityList.toString());
 		log.info("reference object: "+chareCodeRefEntityList.toString());
@@ -78,7 +77,7 @@ public class ChargecodeServiceTest {
 		employeeDtoList1.add(employeeDto1);
 		employeeDtoList2.add(employeeDto2);
 		employeeDtoList3.add(employeeDto3);
-		ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AA","COE","Accenture","Active",employeeDtoList1);
+		ChargeCodeEntity chargeCodeDto1 = new ChargeCodeEntity("AAAAA","COE","Accenture","Active",employeeDtoList1);
 		ChargeCodeEntity chargeCodeDto2 = new ChargeCodeEntity("A12345","COE","Accenture","Active",employeeDtoList2);
 		ChargeCodeEntity chargeCodeDto3 = new ChargeCodeEntity("AB657","COE","Accenture","Active",employeeDtoList3);
 		chargeCodeDTO.add(chargeCodeDto1);

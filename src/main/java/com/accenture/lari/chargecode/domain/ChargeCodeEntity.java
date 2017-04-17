@@ -2,107 +2,109 @@ package com.accenture.lari.chargecode.domain;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
-import org.springframework.data.couchbase.core.mapping.Document;
 
-import com.couchbase.client.java.repository.annotation.Field;
-
-
-/*@Entity
-@Table(name = "CHARGECODE")*/
-@Document
+@Entity
+@Table(name = "CHARGECODE")
+//@Document
 public class ChargeCodeEntity {
 
 	@Id
-	//@Column(name = "charge_code")
-	@Field
+	//private Integer id;
+	@Column(name = "charge_code")
+	//@Field
 	private String chargeCode;
-	@Field	
+	//@Field	
 	private String engagement;
-	@Field
+	//@Field
 	private String company;
-	@Field
+	//@Field
 	private String status;
-	
-	
-	
+	//@Field
+	@ManyToMany(cascade = CascadeType.ALL)
+	@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
+	private Set<EmployeeEntity> authorizedEmployees;
 	public ChargeCodeEntity(String chargeCode, String engagement, String company, String status,
 			Set<EmployeeEntity> authorizedEmployees) {
-		
+		super();
 		this.chargeCode = chargeCode;
 		this.engagement = engagement;
 		this.company = company;
 		this.status = status;
 		this.authorizedEmployees = authorizedEmployees;
 	}
-
-	/*@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
-*/	private Set<EmployeeEntity> authorizedEmployees;
-	
-	
 	public ChargeCodeEntity() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-		
-	
-
+	/**
+	 * @return the chargeCode
+	 */
 	public String getChargeCode() {
 		return chargeCode;
 	}
-
+	/**
+	 * @param chargeCode the chargeCode to set
+	 */
 	public void setChargeCode(String chargeCode) {
 		this.chargeCode = chargeCode;
 	}
-
+	/**
+	 * @return the engagement
+	 */
 	public String getEngagement() {
 		return engagement;
 	}
-
+	/**
+	 * @param engagement the engagement to set
+	 */
 	public void setEngagement(String engagement) {
 		this.engagement = engagement;
 	}
-
+	/**
+	 * @return the company
+	 */
 	public String getCompany() {
 		return company;
 	}
-
+	/**
+	 * @param company the company to set
+	 */
 	public void setCompany(String company) {
 		this.company = company;
 	}
-
+	/**
+	 * @return the status
+	 */
 	public String getStatus() {
 		return status;
 	}
-
+	/**
+	 * @param status the status to set
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
-
+	/**
+	 * @return the authorizedEmployees
+	 */
 	public Set<EmployeeEntity> getAuthorizedEmployees() {
 		return authorizedEmployees;
 	}
-
+	/**
+	 * @param authorizedEmployees the authorizedEmployees to set
+	 */
 	public void setAuthorizedEmployees(Set<EmployeeEntity> authorizedEmployees) {
 		this.authorizedEmployees = authorizedEmployees;
 	}
-
-
-
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "ChargeCodeEntity [chargeCode=" + chargeCode + ", engagement=" + engagement + ", company=" + company
-				+ ", status=" + status + ", authorizedEmployees=" + authorizedEmployees + "]";
-	}
-
-
-
-
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
@@ -117,10 +119,6 @@ public class ChargeCodeEntity {
 		result = prime * result + ((status == null) ? 0 : status.hashCode());
 		return result;
 	}
-
-
-
-
 	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -161,7 +159,4 @@ public class ChargeCodeEntity {
 		return true;
 	}
 	
-	
-	
-
 }

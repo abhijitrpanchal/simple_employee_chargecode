@@ -1,66 +1,70 @@
 package com.accenture.lari.chargecode.domain;
 
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
-
-import org.springframework.data.couchbase.core.mapping.Document;
-
-import com.couchbase.client.java.repository.annotation.Field;
-/*@Entity
-@Table(name = "EMPLOYEE")*/	
-@Document
+import javax.persistence.Table;
+@Entity
+@Table(name = "EMPLOYEE")
+//@Document
 public class EmployeeEntity {
 	
+	
 	@Id 
-	//@Column(name = "employee_id")
-	@Field
+	/*private Integer id;*/
+	@Column(name = "employee_id")
+	//@Field
 	private Integer employeeId;
-	@Field
+	//@Field
 	private String name;
-	@Field
+	//@Field
 	private String address;
 	
 	public EmployeeEntity() {
 	}
-	
-	public EmployeeEntity(Integer employeeId,String name,String address) {
-		
-		this.employeeId=employeeId;
-		this.name=name;
-		this.address=address;
+	public EmployeeEntity(Integer employeeId, String name, String address) {
+		super();
+		this.employeeId = employeeId;
+		this.name = name;
+		this.address = address;
 	}
+	/**
+	 * @return the employeeId
+	 */
 	public Integer getEmployeeId() {
 		return employeeId;
 	}
-
+	/**
+	 * @param employeeId the employeeId to set
+	 */
 	public void setEmployeeId(Integer employeeId) {
 		this.employeeId = employeeId;
 	}
-
+	/**
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
-
+	/**
+	 * @param name the name to set
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	/**
+	 * @return the address
+	 */
 	public String getAddress() {
 		return address;
 	}
-
+	/**
+	 * @param address the address to set
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "EmployeeEntity [employeeId=" + employeeId + ", name=" + name + ", address=" + address + "]";
-	}
-
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */
@@ -73,7 +77,6 @@ public class EmployeeEntity {
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
-
 	/* (non-Javadoc)
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
@@ -103,6 +106,6 @@ public class EmployeeEntity {
 			return false;
 		return true;
 	}
-	
 
+	
 }

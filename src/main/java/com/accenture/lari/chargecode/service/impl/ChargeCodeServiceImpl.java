@@ -30,9 +30,12 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	public static final Logger log = LoggerFactory.getLogger(ChargeCodeServiceImpl.class);
 
 	@Autowired
-	private  ChargeCodeRepository chargeCodeRepository;
-
+	private  final ChargeCodeRepository chargeCodeRepository;
 	
+	@Autowired
+	public ChargeCodeServiceImpl(ChargeCodeRepository chargeCodeRepository) {
+		this.chargeCodeRepository = chargeCodeRepository;
+	}
 	
 	/**
 	   * This is method returns ChargeCode object for a charge code .

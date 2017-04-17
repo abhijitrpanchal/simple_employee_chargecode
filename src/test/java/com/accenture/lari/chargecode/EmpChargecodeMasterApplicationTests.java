@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.master;
+package com.accenture.lari.chargecode;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -38,7 +38,7 @@ import com.accenture.lari.chargecode.resources.dto.EmployeeDTO;
 
 
 
-@SpringBootTest (classes = EmpChargecodeMasterApplication.class)
+@SpringBootTest (classes = EmpChargecodeMasterApplicationTests.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
 public class EmpChargecodeMasterApplicationTests {

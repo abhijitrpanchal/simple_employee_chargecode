@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.pact;
+package com.accenture.lari.chargecode.pact;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
