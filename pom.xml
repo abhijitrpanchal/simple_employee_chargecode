@@ -24,6 +24,8 @@
 		<java.version>1.8</java.version>
 		<ch.qos.logback.version>1.1.6</ch.qos.logback.version>
 		<docker.image.prefix>leanarch</docker.image.prefix>
+		 <gatling.version>2.2.4</gatling.version>
+		 <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -149,7 +151,12 @@
     		<version>0.7.4</version>
 		</dependency>
 		
-		
+		<dependency>
+	      <groupId>io.gatling.highcharts</groupId>
+	      <artifactId>gatling-charts-highcharts</artifactId>
+	      <version>${gatling.version}</version>
+	      <scope>test</scope>
+    	</dependency>
         
 	</dependencies>
 	
@@ -188,6 +195,23 @@
                 </resources>
             </configuration>
         </plugin>
+        <plugin>
+	        <groupId>net.alchim31.maven</groupId>
+	        <artifactId>scala-maven-plugin</artifactId>
+	        <version>${scala-maven-plugin.version}</version>
+      	</plugin>
+         <plugin>
+	        <groupId>io.gatling</groupId>
+	        <artifactId>gatling-maven-plugin</artifactId>
+	        <version>${gatling.version}</version>
+	        <executions>
+	          <execution>
+	            <goals>
+	              <goal>execute</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+      </plugin>
 		</plugins>
 	</build>
 
