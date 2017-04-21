@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.domain.dto;
+package com.accenture.lari.chargecode.resources.dto;
 
 import java.util.Collection;
 
@@ -7,18 +7,25 @@ public class ChargeCodeDTO {
 	
 
 	private String chargeCode;
-
-	
 	private String engagement;
-
 	private String company;
-
 	private String status;
 	
+	
+	
+	public ChargeCodeDTO(String chargeCode, String engagement, String company, String status,
+			Collection<EmployeeDTO> authorizedEmployees) {
+		this.chargeCode = chargeCode;
+		this.engagement = engagement;
+		this.company = company;
+		this.status = status;
+		this.authorizedEmployees = authorizedEmployees;
+	}
+
+	public ChargeCodeDTO() {
+	}
 
 	private Collection<EmployeeDTO> authorizedEmployees;
-	
-	
 
 	public Collection<EmployeeDTO> getAuthorizedEmployees() {
 		return authorizedEmployees;
@@ -60,4 +67,14 @@ public class ChargeCodeDTO {
 		return status;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "ChargeCodeDTO [chargeCode=" + chargeCode + ", engagement=" + engagement + ", company=" + company
+				+ ", status=" + status + ", authorizedEmployees=" + authorizedEmployees + "]";
+	}
+
+	
 }

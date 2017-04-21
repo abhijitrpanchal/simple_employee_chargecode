@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.chargecode.master;
+package com.accenture.lari.utils;
 
 /**
  * Utility class which stores ThreadLocal (Request) correlation Id.
