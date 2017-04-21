@@ -1,0 +1,1034 @@
+12:46:29.389 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.accenture.lari.chargecode.EmpChargecodeMasterApplicationTests], using SpringBootContextLoader
+12:46:29.413 [main] INFO  o.s.t.c.s.AbstractContextLoader CorrelationId  - Could not detect default resource locations for test class [com.accenture.lari.chargecode.EmpChargecodeMasterApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:46:29.547 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:46:29.600 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@48075da3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@68c9133c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a35b0f5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5e2c3d18, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2cb4893b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@cc43f62, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b218417, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@645aa696, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6caf0677, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@413d1baf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@16eb3ea3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@273444fe]
+12:46:29.723 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.accenture.lari.chargecode.service.ChargecodeServiceTest], using SpringBootContextLoader
+12:46:29.726 [main] INFO  o.s.t.c.s.AbstractContextLoader CorrelationId  - Could not detect default resource locations for test class [com.accenture.lari.chargecode.service.ChargecodeServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:46:29.772 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:46:29.785 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13526e59, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2235eaab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@17503f6b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bcd05cb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b6d844d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36804139, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@20bd8be5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@730d2164, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@24959ca4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@10289886, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c86dbc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@461ad730]
+12:46:29.796 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.accenture.lari.chargecode.EmpChargecodeMasterApplicationTests], using SpringBootContextLoader
+12:46:29.799 [main] INFO  o.s.t.c.s.AbstractContextLoader CorrelationId  - Could not detect default resource locations for test class [com.accenture.lari.chargecode.EmpChargecodeMasterApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:46:29.821 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:46:29.836 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ec9bd38, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@452e19ca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6b0d80ed, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f8e8894, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cfdd820, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@928763c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@e25951c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@15f47664, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@471a9022, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@dc9876b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2f666ebb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19976a65]
+12:46:34.892 [background-preinit] INFO  o.h.validator.internal.util.Version CorrelationId  - HV000001: Hibernate Validator 5.2.4.Final
+12:46:35.296 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext CorrelationId  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@25e2a451: startup date [Fri Apr 21 12:46:35 IST 2017]; root of context hierarchy
+12:46:35.956 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:46:36.008 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c2b2dd84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:46:37.151 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - No active profile set, falling back to default profiles: default
+12:46:37.156 [main] INFO  o.s.w.c.s.GenericWebApplicationContext CorrelationId  - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7bb004b8: startup date [Fri Apr 21 12:46:37 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@25e2a451
+12:46:37.181 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:46:37.214 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Started EmpChargecodeMasterApplicationTests in 7.199 seconds (JVM running for 10.68)
+12:46:37.276 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext CorrelationId  - Initializing Spring FrameworkServlet ''
+12:46:37.276 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization started
+12:46:37.868 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization completed in 592 ms
+12:46:37.897 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/A12345] in DispatcherServlet with name ''
+12:46:37.899 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Result::: org.springframework.test.web.servlet.MockMvc$1@3ece1e79
+12:46:37.900 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/A12345] in DispatcherServlet with name ''
+12:46:37.914 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - 
+12:46:37.921 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext CorrelationId  - Initializing Spring FrameworkServlet ''
+12:46:37.922 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization started
+12:46:37.932 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization completed in 10 ms
+12:46:37.933 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes] in DispatcherServlet with name ''
+12:46:37.933 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Result::: org.springframework.test.web.servlet.MockMvc$1@442f92e6
+12:46:37.934 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes] in DispatcherServlet with name ''
+12:46:37.941 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - 
+12:46:37.946 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext CorrelationId  - Initializing Spring FrameworkServlet ''
+12:46:37.946 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization started
+12:46:37.960 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization completed in 13 ms
+12:46:37.961 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/AAAAA] in DispatcherServlet with name ''
+12:46:37.962 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Result::: org.springframework.test.web.servlet.MockMvc$1@58e85c6f
+12:46:37.963 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/AAAAA] in DispatcherServlet with name ''
+12:46:38.099 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext CorrelationId  - Initializing Spring FrameworkServlet ''
+12:46:38.100 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization started
+12:46:38.108 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization completed in 8 ms
+12:46:38.109 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/employees/10000] in DispatcherServlet with name ''
+12:46:38.110 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Result::: org.springframework.test.web.servlet.MockMvc$1@1da4b6b3
+12:46:38.111 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes/employees/10000] in DispatcherServlet with name ''
+12:46:38.113 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - 
+12:46:38.120 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext CorrelationId  - Initializing Spring FrameworkServlet ''
+12:46:38.121 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization started
+12:46:38.135 [main] INFO  o.s.t.w.s.TestDispatcherServlet CorrelationId  - FrameworkServlet '': initialization completed in 13 ms
+12:46:38.136 [main] WARN  o.s.web.servlet.PageNotFound CorrelationId  - No mapping found for HTTP request with URI [/chargecodes] in DispatcherServlet with name ''
+12:46:38.138 [main] INFO  c.a.l.c.EmpChargecodeMasterApplicationTests CorrelationId  - Chargecode not found
+12:46:38.142 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.accenture.lari.chargecode.service.ChargecodeServiceTest], using SpringBootContextLoader
+12:46:38.144 [main] INFO  o.s.t.c.s.AbstractContextLoader CorrelationId  - Could not detect default resource locations for test class [com.accenture.lari.chargecode.service.ChargecodeServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:46:38.173 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:46:38.185 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper CorrelationId  - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@213c3543, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9d7ccfe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@670ce331, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3cff0139, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c29adc8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b2e3e8f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4bbb49b0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@f096f37, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3effd4f3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41f4fe5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15f8701f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@514cd540]
+12:46:38.867 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext CorrelationId  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@153cd6bb: startup date [Fri Apr 21 12:46:38 IST 2017]; root of context hierarchy
+12:46:38.897 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:46:38.922 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c2b2dd84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12:46:39.676 [main] INFO  c.a.l.c.s.ChargecodeServiceTest CorrelationId  - No active profile set, falling back to default profiles: default
+12:46:39.684 [main] INFO  o.s.w.c.s.GenericWebApplicationContext CorrelationId  - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4fc142ec: startup date [Fri Apr 21 12:46:39 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@153cd6bb
+12:46:39.877 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+12:46:39.895 [main] INFO  c.a.l.c.s.ChargecodeServiceTest CorrelationId  - Started ChargecodeServiceTest in 1.69 seconds (JVM running for 13.361)
+12:46:39.928 [main] INFO  c.a.l.c.s.ChargecodeServiceTest CorrelationId  - from service layer: [com.accenture.lari.chargecode.domain.ChargeCodeEntity@61524d6b, com.accenture.lari.chargecode.domain.ChargeCodeEntity@2b5e220d, com.accenture.lari.chargecode.domain.ChargeCodeEntity@3cd57b0e]
+12:46:39.929 [main] INFO  c.a.l.c.s.ChargecodeServiceTest CorrelationId  - reference object: [com.accenture.lari.chargecode.domain.ChargeCodeEntity@61524d6b, com.accenture.lari.chargecode.domain.ChargeCodeEntity@2b5e220d, com.accenture.lari.chargecode.domain.ChargeCodeEntity@3cd57b0e]
+12:46:39.941 [Thread-6] INFO  o.s.w.c.s.GenericWebApplicationContext CorrelationId  - Closing org.springframework.web.context.support.GenericWebApplicationContext@4fc142ec: startup date [Fri Apr 21 12:46:39 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@153cd6bb
+12:46:39.942 [Thread-3] INFO  o.s.w.c.s.GenericWebApplicationContext CorrelationId  - Closing org.springframework.web.context.support.GenericWebApplicationContext@7bb004b8: startup date [Fri Apr 21 12:46:37 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@25e2a451
+12:47:15.685 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger CorrelationId  - Slf4jLogger started
+12:47:17.099 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter CorrelationId  - Initializing
+12:47:17.121 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter CorrelationId  - Initialized
+12:47:17.136 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.LogFileDataWriter CorrelationId  - Initializing
+12:47:17.217 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.LogFileDataWriter CorrelationId  - Initialized
+12:47:18.790 [main] INFO  io.gatling.http.ahc.HttpEngine CorrelationId  - Start warm up
+12:47:19.860 [main] INFO  io.gatling.http.ahc.HttpEngine CorrelationId  - Couldn't execute warm up request http://gatling.io
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to gatling.io/35.157.221.8:80 after 1000 ms
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:168)
+	at io.gatling.http.ahc.HttpEngine.warmpUp(HttpEngine.scala:96)
+	at io.gatling.http.protocol.HttpProtocol$$anon$1.io$gatling$http$protocol$HttpProtocol$$anon$1$$$anonfun$1(HttpProtocol.scala:62)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.comps$1(Protocol.scala:67)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.io$gatling$core$protocol$ProtocolComponentsRegistry$$$anonfun$4(Protocol.scala:69)
+	at scala.collection.mutable.MapLike$class.getOrElseUpdate(MapLike.scala:194)
+	at scala.collection.mutable.AbstractMap.getOrElseUpdate(Map.scala:80)
+	at io.gatling.core.protocol.ProtocolComponentsRegistry.components(Protocol.scala:69)
+	at io.gatling.http.action.HttpActionBuilder.lookUpHttpComponents(HttpActionBuilder.scala:25)
+	at io.gatling.http.action.sync.HttpRequestActionBuilder.build(HttpRequestActionBuilder.scala:33)
+	at io.gatling.core.structure.StructureBuilder$class.io$gatling$core$structure$StructureBuilder$class$$$anonfun$1(StructureBuilder.scala:34)
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
+	at scala.collection.immutable.List.foldLeft(List.scala:84)
+	at io.gatling.core.structure.StructureBuilder$class.build(StructureBuilder.scala:33)
+	at io.gatling.core.structure.ScenarioBuilder.build(ScenarioBuilder.scala:38)
+	at io.gatling.core.structure.PopulationBuilder.build(ScenarioBuilder.scala:98)
+	at io.gatling.core.scenario.SimulationParams.io$gatling$core$scenario$SimulationParams$$$anonfun$15(Simulation.scala:188)
+	at scala.collection.immutable.List.map(List.scala:273)
+	at io.gatling.core.scenario.SimulationParams.scenarios(Simulation.scala:188)
+	at io.gatling.app.Runner.run0(Runner.scala:95)
+	at io.gatling.app.Runner.run(Runner.scala:64)
+	at io.gatling.app.Gatling$.start(Gatling.scala:56)
+	at io.gatling.app.Gatling$.fromArgs(Gatling.scala:41)
+	at io.gatling.app.Gatling$.main(Gatling.scala:33)
+	at io.gatling.app.Gatling.main(Gatling.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.gatling.mojo.MainWithArgsInFile.runMain(MainWithArgsInFile.java:50)
+	at io.gatling.mojo.MainWithArgsInFile.main(MainWithArgsInFile.java:33)
+Caused by: java.util.concurrent.TimeoutException: Request timeout to gatling.io/35.157.221.8:80 after 1000 ms
+	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:48)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:625)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:700)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:428)
+	at java.lang.Thread.run(Thread.java:745)
+12:47:19.863 [main] INFO  io.gatling.http.ahc.HttpEngine CorrelationId  - Warm up done
+12:47:22.187 [gatling-http-thread-1-6] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 1: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.190 [gatling-http-thread-1-6] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.193 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1966ms)
+12:47:22.398 [gatling-http-thread-1-8] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 2: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.399 [gatling-http-thread-1-8] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.399 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1904ms)
+12:47:22.717 [gatling-http-thread-1-3] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 3: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.718 [gatling-http-thread-1-3] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.718 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1972ms)
+12:47:22.918 [gatling-http-thread-1-4] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 4: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.919 [gatling-http-thread-1-4] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:22.920 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1925ms)
+12:47:23.173 [gatling-http-thread-1-7] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 5: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:23.174 [gatling-http-thread-1-7] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:23.175 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1904ms)
+12:47:23.409 [gatling-http-thread-1-3] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 6: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:23.410 [gatling-http-thread-1-3] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:23.410 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1905ms)
+12:47:23.723 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 7: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:23.724 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:23.725 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1969ms)
+12:47:23.906 [gatling-http-thread-1-8] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 8: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:23.907 [gatling-http-thread-1-8] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:23.907 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1901ms)
+12:47:24.080 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.gatling.core.controller.Controller CorrelationId  - InjectionStopped expectedCount=20
+12:47:24.162 [gatling-http-thread-1-3] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 9: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:24.163 [gatling-http-thread-1-3] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:24.163 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1906ms)
+12:47:24.199 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 1: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.202 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.203 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3875ms)
+12:47:24.392 [gatling-http-thread-1-7] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 2: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.393 [gatling-http-thread-1-7] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.393 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3798ms)
+12:47:24.419 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 10: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.420 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.420 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1995ms)
+12:47:24.590 [gatling-http-thread-1-2] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 11: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:24.590 [gatling-http-thread-1-2] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:24.590 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1915ms)
+12:47:24.714 [gatling-http-thread-1-4] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 3: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.715 [gatling-http-thread-1-4] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.715 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3868ms)
+12:47:24.835 [gatling-http-thread-1-6] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 12: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.836 [gatling-http-thread-1-6] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:24.836 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1908ms)
+12:47:25.017 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 4: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.018 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.018 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3922ms)
+12:47:25.166 [gatling-http-thread-1-2] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 13: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.167 [gatling-http-thread-1-2] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.168 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1992ms)
+12:47:25.217 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 5: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.218 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.218 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3846ms)
+12:47:25.437 [gatling-http-thread-1-7] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 14: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.438 [gatling-http-thread-1-7] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.438 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=2000ms)
+12:47:25.487 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 6: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.488 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.488 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3882ms)
+12:47:25.669 [gatling-http-thread-1-4] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 15: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.670 [gatling-http-thread-1-4] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.670 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1980ms)
+12:47:25.788 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 7: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.789 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:25.789 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3932ms)
+12:47:25.849 [gatling-http-thread-1-8] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 16: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.850 [gatling-http-thread-1-8] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.850 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1907ms)
+12:47:25.918 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 8: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.919 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:25.921 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3811ms)
+12:47:26.088 [gatling-http-thread-1-2] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 17: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.089 [gatling-http-thread-1-2] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.090 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1905ms)
+12:47:26.190 [gatling-http-thread-1-4] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 9: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.191 [gatling-http-thread-1-4] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.192 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3834ms)
+12:47:26.349 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 18: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.350 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.351 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1925ms)
+12:47:26.431 [gatling-http-thread-1-6] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 10: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.432 [gatling-http-thread-1-6] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.432 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3906ms)
+12:47:26.599 [gatling-http-thread-1-8] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 11: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.600 [gatling-http-thread-1-8] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.601 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3825ms)
+12:47:26.620 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 19: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.621 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.622 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1905ms)
+12:47:26.829 [gatling-http-thread-1-3] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 20: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.830 [gatling-http-thread-1-3] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:26.830 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=1904ms)
+12:47:26.849 [gatling-http-thread-1-4] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 12: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.850 [gatling-http-thread-1-4] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:26.851 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3822ms)
+12:47:27.271 [gatling-http-thread-1-7] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 13: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:27.272 [gatling-http-thread-1-7] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:27.272 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3995ms)
+12:47:27.439 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 14: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:27.439 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:27.440 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3901ms)
+12:47:27.771 [gatling-http-thread-1-3] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 15: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:27.772 [gatling-http-thread-1-3] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:27.772 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3982ms)
+12:47:27.865 [gatling-http-thread-1-5] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 16: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:27.866 [gatling-http-thread-1-5] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:27.867 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3823ms)
+12:47:28.164 [gatling-http-thread-1-6] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 17: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:28.164 [gatling-http-thread-1-6] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:28.164 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3878ms)
+12:47:28.375 [gatling-http-thread-1-7] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 18: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:28.375 [gatling-http-thread-1-7] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:28.376 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3849ms)
+12:47:28.624 [gatling-http-thread-1-8] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 19: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:28.625 [gatling-http-thread-1-8] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/0:0:0:0:0:0:0:1:8090
+12:47:28.626 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3807ms)
+12:47:28.833 [gatling-http-thread-1-1] INFO  io.gatling.http.ahc.AsyncHandler CorrelationId  - Request 'request1' failed for user 20: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:28.834 [gatling-http-thread-1-1] WARN  i.gatling.http.ahc.ResponseProcessor CorrelationId  - Request 'request1' failed: j.n.ConnectException: Connection refused: no further information: localhost/127.0.0.1:8090
+12:47:28.835 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - can't pause (remaining drift=3808ms)
+12:47:28.835 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.gatling.core.controller.Controller CorrelationId  - All users are stopped
+12:47:28.875 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.gatling.core.controller.Controller CorrelationId  - StatsEngineStopped
+12:47:29.052 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Collected ArrayBuffer(C:\spring-boot\emp_chargecode_master\target\gatling\mainsimulation-1492759036783\simulation.log) from mainsimulation-1492759036783
+12:47:29.075 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - First pass
+12:47:29.097 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - First pass done: read 81 lines
+12:47:29.121 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Second pass
+12:47:29.230 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Second pass: read 81 lines
+13:27:43.041 [background-preinit] INFO  o.h.validator.internal.util.Version CorrelationId  - HV000001: Hibernate Validator 5.2.4.Final
+13:27:43.556 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext CorrelationId  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5170bcf4: startup date [Fri Apr 21 13:27:43 IST 2017]; root of context hierarchy
+13:27:43.831 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:27:43.877 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$29e60d0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:27:44.906 [main] INFO  c.a.l.c.EmpChargecodeMasterApplication CorrelationId  - No active profile set, falling back to default profiles: default
+13:27:44.950 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext CorrelationId  - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b43e173: startup date [Fri Apr 21 13:27:44 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5170bcf4
+13:27:48.645 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate CorrelationId  - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:27:48.843 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory CorrelationId  - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+13:27:49.288 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory CorrelationId  - Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]]
+13:27:49.880 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate CorrelationId  - Multiple Spring Data modules found, entering strict repository configuration mode!
+13:27:49.933 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory CorrelationId  - Overriding bean definition for bean 'chargeCodeRepository' with a different definition: replacing [Root bean: class [org.springframework.data.couchbase.repository.support.CouchbaseRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+13:27:50.082 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor CorrelationId  - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+13:27:51.661 [main] INFO  o.s.cloud.context.scope.GenericScope CorrelationId  - BeanFactory id=94306da1-0049-32da-a4b9-25826d7a4f20
+13:27:52.094 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor CorrelationId  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:27:52.523 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b263cf0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:27:52.943 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping CorrelationId  - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+13:27:53.234 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dcc0a10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:27:53.780 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker CorrelationId  - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$29e60d0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:27:54.906 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer CorrelationId  - Tomcat initialized with port(s): 8090 (http)
+13:27:54.933 [main] INFO  o.a.catalina.core.StandardService CorrelationId  - Starting service Tomcat
+13:27:54.935 [main] INFO  o.a.catalina.core.StandardEngine CorrelationId  - Starting Servlet Engine: Apache Tomcat/8.5.5
+13:27:56.306 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] CorrelationId  - Initializing Spring embedded WebApplicationContext
+13:27:56.308 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader CorrelationId  - Root WebApplicationContext: initialization completed in 11358 ms
+13:27:57.882 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'metricsFilter' to: [/*]
+13:27:57.883 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:27:57.883 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:27:57.886 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:27:57.890 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'requestContextFilter' to: [/*]
+13:27:57.894 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean CorrelationId  - Mapping filter: 'springSecurityFilterChain' to: [/*]
+13:27:57.896 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+13:27:57.900 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'correlationHeaderFilter' to urls: [/*]
+13:27:57.901 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean CorrelationId  - Mapping filter: 'applicationContextIdFilter' to: [/*]
+13:27:57.903 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean CorrelationId  - Mapping servlet: 'dispatcherServlet' to [/]
+13:27:57.913 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean CorrelationId  - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+13:27:59.164 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils CorrelationId  - Executing SQL script from URL [file:/C:/spring-boot/emp_chargecode_master/target/classes/schema.sql]
+13:27:59.189 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils CorrelationId  - Executed SQL script from URL [file:/C:/spring-boot/emp_chargecode_master/target/classes/schema.sql] in 24 ms.
+13:27:59.747 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean CorrelationId  - Building JPA container EntityManagerFactory for persistence unit 'default'
+13:27:59.778 [main] INFO  o.h.jpa.internal.util.LogHelper CorrelationId  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+13:27:59.935 [main] INFO  org.hibernate.Version CorrelationId  - HHH000412: Hibernate Core {5.0.11.Final}
+13:27:59.939 [main] INFO  org.hibernate.cfg.Environment CorrelationId  - HHH000206: hibernate.properties not found
+13:27:59.942 [main] INFO  org.hibernate.cfg.Environment CorrelationId  - HHH000021: Bytecode provider name : javassist
+13:28:00.144 [main] INFO  o.h.annotations.common.Version CorrelationId  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+13:28:00.550 [main] INFO  org.hibernate.dialect.Dialect CorrelationId  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+13:28:02.573 [main] INFO  o.h.tool.hbm2ddl.SchemaExport CorrelationId  - HHH000227: Running hbm2ddl schema export
+13:28:02.597 [main] INFO  o.h.tool.hbm2ddl.SchemaExport CorrelationId  - HHH000476: Executing import script '/import.sql'
+13:28:02.603 [main] INFO  o.h.tool.hbm2ddl.SchemaExport CorrelationId  - HHH000230: Schema export complete
+13:28:02.661 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean CorrelationId  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:28:08.620 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/chargecodes/{wbs}/employees/{empid}],methods=[GET],produces=[application/json]}" onto public com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO com.accenture.lari.chargecode.resources.ChargeCodeMasterController.isChargeCodeAuthorized(java.lang.String,java.lang.Integer) throws java.lang.Exception
+13:28:08.631 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/chargecodes/{chargecodes}],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO> com.accenture.lari.chargecode.resources.ChargeCodeMasterController.getChargeCodes(java.lang.String[])
+13:28:08.633 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+13:28:08.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+13:28:08.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+13:28:08.653 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+13:28:08.658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:28:08.660 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping CorrelationId  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:28:10.610 [main] WARN  c.n.c.sources.URLConfigurationSource CorrelationId  - No URLs will be polled as dynamic configuration sources.
+13:28:10.610 [main] INFO  c.n.c.sources.URLConfigurationSource CorrelationId  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:28:10.623 [main] INFO  c.n.config.DynamicPropertyFactory CorrelationId  - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5220e6ff
+13:28:14.249 [main] INFO  c.c.client.core.CouchbaseCore CorrelationId  - CouchbaseEnvironment: {sslEnabled=false, sslKeystoreFile='null', sslKeystorePassword='null', queryEnabled=false, queryPort=8093, bootstrapHttpEnabled=true, bootstrapCarrierEnabled=true, bootstrapHttpDirectPort=8091, bootstrapHttpSslPort=18091, bootstrapCarrierDirectPort=11210, bootstrapCarrierSslPort=11207, ioPoolSize=4, computationPoolSize=4, responseBufferSize=16384, requestBufferSize=16384, kvServiceEndpoints=1, viewServiceEndpoints=1, queryServiceEndpoints=1, searchServiceEndpoints=1, ioPool=NioEventLoopGroup, coreScheduler=CoreScheduler, eventBus=DefaultEventBus, packageNameAndVersion=couchbase-java-client/2.2.8 (git: 2.2.8, core: 1.2.9), dcpEnabled=false, retryStrategy=BestEffort, maxRequestLifetime=75000, retryDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=100, upper=100000}, reconnectDelay=ExponentialDelay{growBy 1.0 MILLISECONDS, powers of 2; lower=32, upper=4096}, observeIntervalDelay=ExponentialDelay{growBy 1.0 MICROSECONDS, powers of 2; lower=10, upper=100000}, keepAliveInterval=30000, autoreleaseAfter=2000, bufferPoolingEnabled=true, tcpNodelayEnabled=true, mutationTokensEnabled=false, socketConnectTimeout=1000, dcpConnectionBufferSize=20971520, dcpConnectionBufferAckThreshold=0.2, dcpConnectionName=dcp/core-io, callbacksOnIoPool=false, queryTimeout=75000, viewTimeout=75000, kvTimeout=2500, connectTimeout=5000, disconnectTimeout=25000, dnsSrvEnabled=false}
+13:28:15.310 [cb-io-1-1] INFO  com.couchbase.client.core.node.Node CorrelationId  - Connected to Node ec2-52-7-102-164.compute-1.amazonaws.com
+13:28:15.639 [cb-io-1-1] INFO  com.couchbase.client.core.node.Node CorrelationId  - Disconnected from Node ec2-52-7-102-164.compute-1.amazonaws.com
+13:28:17.958 [cb-io-1-2] INFO  com.couchbase.client.core.node.Node CorrelationId  - Connected to Node ec2-52-7-102-164.compute-1.amazonaws.com
+13:28:18.411 [cb-computations-4] INFO  c.c.c.c.config.ConfigurationProvider CorrelationId  - Opened bucket chargecodes
+13:28:19.424 [cb-io-1-4] WARN  c.c.client.core.endpoint.Endpoint CorrelationId  - [null][QueryEndpoint]: Socket connect took longer than specified timeout.
+13:28:19.430 [cb-io-1-4] WARN  c.c.c.d.i.n.u.c.DefaultPromise CorrelationId  - An exception was thrown by com.couchbase.client.core.endpoint.AbstractEndpoint$2.operationComplete()
+rx.exceptions.OnErrorNotImplementedException: connection timed out: ec2-52-7-102-164.compute-1.amazonaws.com/52.7.102.164:8093
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:152)
+	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onError(OnSubscribeMap.java:88)
+	at rx.internal.operators.OnSubscribeDoOnEach$DoOnEachSubscriber.onError(OnSubscribeDoOnEach.java:87)
+	at rx.internal.operators.OperatorSingle$ParentSubscriber.onError(OperatorSingle.java:131)
+	at rx.internal.operators.DeferredScalarSubscriber.onError(DeferredScalarSubscriber.java:67)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.reportError(OperatorMerge.java:268)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.checkTerminate(OperatorMerge.java:824)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emitLoop(OperatorMerge.java:585)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emit(OperatorMerge.java:574)
+	at rx.internal.operators.OperatorMerge$InnerSubscriber.onError(OperatorMerge.java:858)
+	at rx.internal.operators.OperatorSingle$ParentSubscriber.onError(OperatorSingle.java:131)
+	at rx.internal.operators.DeferredScalarSubscriber.onError(DeferredScalarSubscriber.java:67)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.reportError(OperatorMerge.java:268)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.checkTerminate(OperatorMerge.java:824)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emitLoop(OperatorMerge.java:585)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emit(OperatorMerge.java:574)
+	at rx.internal.operators.OperatorMerge$InnerSubscriber.onError(OperatorMerge.java:858)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onError(OnSubscribeMap.java:88)
+	at rx.internal.operators.OperatorSingle$ParentSubscriber.onError(OperatorSingle.java:131)
+	at rx.internal.operators.DeferredScalarSubscriber.onError(DeferredScalarSubscriber.java:67)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.reportError(OperatorMerge.java:268)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.checkTerminate(OperatorMerge.java:824)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emitLoop(OperatorMerge.java:585)
+	at rx.internal.operators.OperatorMerge$MergeSubscriber.emit(OperatorMerge.java:574)
+	at rx.internal.operators.OperatorMerge$InnerSubscriber.onError(OperatorMerge.java:858)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onError(OnSubscribeMap.java:88)
+	at rx.internal.operators.OnSubscribeMap$MapSubscriber.onError(OnSubscribeMap.java:88)
+	at rx.internal.operators.OperatorSingle$ParentSubscriber.onError(OperatorSingle.java:131)
+	at rx.internal.operators.DeferredScalarSubscriber.onError(DeferredScalarSubscriber.java:67)
+	at rx.observers.Subscribers$5.onError(Subscribers.java:230)
+	at rx.subjects.SubjectSubscriptionManager$SubjectObserver.onError(SubjectSubscriptionManager.java:229)
+	at rx.subjects.AsyncSubject.onError(AsyncSubject.java:119)
+	at com.couchbase.client.core.endpoint.AbstractEndpoint$2.operationComplete(AbstractEndpoint.java:311)
+	at com.couchbase.client.core.endpoint.AbstractEndpoint$2.operationComplete(AbstractEndpoint.java:277)
+	at com.couchbase.client.deps.io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:683)
+	at com.couchbase.client.deps.io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:604)
+	at com.couchbase.client.deps.io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:564)
+	at com.couchbase.client.deps.io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at com.couchbase.client.deps.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:222)
+	at com.couchbase.client.deps.io.netty.util.concurrent.PromiseTask$RunnableAdapter.call(PromiseTask.java:38)
+	at com.couchbase.client.deps.io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:120)
+	at com.couchbase.client.deps.io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at com.couchbase.client.deps.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at com.couchbase.client.deps.io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at com.couchbase.client.deps.io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.couchbase.client.deps.io.netty.channel.ConnectTimeoutException: connection timed out: ec2-52-7-102-164.compute-1.amazonaws.com/52.7.102.164:8093
+	at com.couchbase.client.deps.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:220)
+	... 7 common frames omitted
+13:28:19.981 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+13:28:19.985 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:19.987 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:19.989 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:19.990 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:19.992 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+13:28:19.993 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+13:28:19.996 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+13:28:20.000 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.002 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+13:28:20.005 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.006 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+13:28:20.007 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.008 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+13:28:20.013 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+13:28:20.015 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.016 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+13:28:20.017 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+13:28:20.018 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+13:28:20.020 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+13:28:20.021 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.023 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:20.024 [main] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping CorrelationId  - Mapped "{[/features || /features.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+13:28:21.900 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter CorrelationId  - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5b43e173: startup date [Fri Apr 21 13:27:44 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5170bcf4
+13:28:22.085 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping CorrelationId  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:28:22.086 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping CorrelationId  - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:28:22.209 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping CorrelationId  - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:28:22.831 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration CorrelationId  - 
+
+Using default security password: d39067fd-564d-4ff5-81fd-be74be94fb36
+
+13:28:23.408 [main] INFO  o.s.s.web.DefaultSecurityFilterChain CorrelationId  - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+13:28:23.709 [main] INFO  o.s.s.web.DefaultSecurityFilterChain CorrelationId  - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65b9ebee, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dc0cbbc, org.springframework.security.web.header.HeaderWriterFilter@4ff1e20b, org.springframework.security.web.authentication.logout.LogoutFilter@2a70c8d5, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@29a73056, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e8fa647, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f4b9792, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e2cebdf, org.springframework.security.web.session.SessionManagementFilter@5b9815b6, org.springframework.security.web.access.ExceptionTranslationFilter@272600e1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7db644d5]
+13:28:23.767 [main] INFO  o.s.s.web.DefaultSecurityFilterChain CorrelationId  - Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@61377842, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51cbd1d, org.springframework.security.web.context.SecurityContextPersistenceFilter@279c94ad, org.springframework.security.web.header.HeaderWriterFilter@435d74ba, org.springframework.security.web.authentication.logout.LogoutFilter@4a3b0387, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@376aaeec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53eb4ef5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b3b0896, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f29ee5, org.springframework.security.web.session.SessionManagementFilter@252bc7ec, org.springframework.security.web.access.ExceptionTranslationFilter@13ecedf6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7cb8109]
+13:28:23.776 [main] INFO  o.s.s.web.DefaultSecurityFilterChain CorrelationId  - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d8cfad5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5039de18, org.springframework.security.web.header.HeaderWriterFilter@22152da0, org.springframework.security.web.authentication.logout.LogoutFilter@4e2bed0f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@507c33cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f96e49f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24e5a4e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@337fac72, org.springframework.security.web.session.SessionManagementFilter@b6c290a, org.springframework.security.web.access.ExceptionTranslationFilter@445760e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@611c9d31]
+13:28:26.269 [main] WARN  c.n.c.sources.URLConfigurationSource CorrelationId  - No URLs will be polled as dynamic configuration sources.
+13:28:26.269 [main] INFO  c.n.c.sources.URLConfigurationSource CorrelationId  - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+13:28:26.544 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Registering beans for JMX exposure on startup
+13:28:26.569 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Bean with name 'refreshScope' has been autodetected for JMX exposure
+13:28:26.571 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Bean with name 'environmentManager' has been autodetected for JMX exposure
+13:28:26.578 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+13:28:26.579 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+13:28:26.582 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+13:28:26.588 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+13:28:26.619 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+13:28:26.642 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+13:28:26.664 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5b43e173,type=ConfigurationPropertiesRebinder]
+13:28:26.702 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter CorrelationId  - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+13:28:26.705 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Registering beans for JMX exposure on startup
+13:28:27.152 [main] INFO  o.s.c.s.DefaultLifecycleProcessor CorrelationId  - Starting beans in phase 0
+13:28:27.168 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory CorrelationId  - Setting initial instance status as: STARTING
+13:28:27.546 [main] INFO  c.n.d.p.DiscoveryJerseyProvider CorrelationId  - Using JSON encoding codec LegacyJacksonJson
+13:28:27.547 [main] INFO  c.n.d.p.DiscoveryJerseyProvider CorrelationId  - Using JSON decoding codec LegacyJacksonJson
+13:28:27.747 [main] INFO  c.n.d.p.DiscoveryJerseyProvider CorrelationId  - Using XML encoding codec XStreamXml
+13:28:27.748 [main] INFO  c.n.d.p.DiscoveryJerseyProvider CorrelationId  - Using XML decoding codec XStreamXml
+13:28:28.477 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:28:28.893 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Disable delta property : false
+13:28:28.894 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Single vip registry refresh property : null
+13:28:28.894 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Force full registry fetch : false
+13:28:28.895 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Application is null : false
+13:28:28.895 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Registered Applications size is zero : true
+13:28:28.895 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Application version is -1: true
+13:28:28.896 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Getting all instance registry info from the eureka server
+13:28:29.716 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - The response status is 200
+13:28:29.718 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Starting heartbeat executor: renew interval is: 30
+13:28:29.721 [main] INFO  c.n.discovery.InstanceInfoReplicator CorrelationId  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+13:28:29.726 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Discovery Client initialized at timestamp 1492761509726 with initial instances count: 5
+13:28:29.840 [main] INFO  o.s.c.n.e.EurekaDiscoveryClientConfiguration CorrelationId  - Registering application chargecodes with eureka with status UP
+13:28:29.841 [main] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - Saw local status change event StatusChangeEvent [timestamp=1492761509841, current=UP, previous=STARTING]
+13:28:29.850 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - DiscoveryClient_CHARGECODES/192.168.0.103:chargecodes:8090: registering service...
+13:28:29.881 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+13:28:29.932 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+13:28:29.940 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+13:28:29.947 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+13:28:29.951 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+13:28:29.958 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+13:28:29.963 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+13:28:29.968 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+13:28:29.972 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+13:28:29.977 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+13:28:29.982 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+13:28:29.991 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter CorrelationId  - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+13:28:29.995 [main] INFO  o.s.c.s.DefaultLifecycleProcessor CorrelationId  - Starting beans in phase 2147483647
+13:28:29.995 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper CorrelationId  - Context refreshed
+13:28:30.027 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper CorrelationId  - Found 1 custom documentation plugin(s)
+13:28:30.064 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner CorrelationId  - Scanning for api listing references
+13:28:30.248 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration CorrelationId  - Starting poller
+13:28:30.261 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient CorrelationId  - DiscoveryClient_CHARGECODES/192.168.0.103:chargecodes:8090 - registration status: 204
+13:28:30.304 [main] INFO  o.a.coyote.http11.Http11NioProtocol CorrelationId  - Initializing ProtocolHandler ["http-nio-8090"]
+13:28:30.376 [main] INFO  o.a.coyote.http11.Http11NioProtocol CorrelationId  - Starting ProtocolHandler [http-nio-8090]
+13:28:30.417 [main] INFO  o.a.tomcat.util.net.NioSelectorPool CorrelationId  - Using a shared selector for servlet write/read
+13:28:30.452 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer CorrelationId  - Tomcat started on port(s): 8090 (http)
+13:28:30.453 [main] INFO  o.s.c.n.e.EurekaDiscoveryClientConfiguration CorrelationId  - Updating port to 8090
+13:28:30.462 [main] INFO  c.a.l.c.EmpChargecodeMasterApplication CorrelationId  - Started EmpChargecodeMasterApplication in 49.268 seconds (JVM running for 52.232)
+13:33:09.368 [DiscoveryClient-HeartbeatExecutor-0] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient CorrelationId  - Request execution error
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:832)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1396)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:122)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 26 common frames omitted
+13:33:09.375 [DiscoveryClient-HeartbeatExecutor-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution failure
+13:33:09.813 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution succeeded on retry #1
+13:33:28.844 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:36:55.145 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] CorrelationId  - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:36:55.146 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet CorrelationId  - FrameworkServlet 'dispatcherServlet': initialization started
+13:36:55.242 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet CorrelationId  - FrameworkServlet 'dispatcherServlet': initialization completed in 96 ms
+13:36:55.456 [http-nio-8090-exec-1] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : ad0a52ec-0e7e-4c75-bb5e-6869aee5730a
+13:36:55.510 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - getChargeCodes: 
+13:36:55.577 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - getChargeCodes: 1
+13:36:55.764 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - getChargeCodes ::: START
+13:36:55.765 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - getChargeCodes ::: Invalid chargecode existance in request: false
+13:36:55.765 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - Single chargecode in sthe request
+13:36:55.786 [http-nio-8090-exec-1] INFO  o.h.h.i.QueryTranslatorFactoryInitiator CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - HHH000397: Using ASTQueryTranslatorFactory
+13:36:56.000 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - binding parameter [1] as [VARCHAR] - [AAAA]
+13:36:58.562 [http-nio-8090-exec-2] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : d0e2d73b-b622-4798-a2d4-9051f7e1107c
+13:36:58.568 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - getChargeCodes: 
+13:36:58.569 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - getChargeCodes: 1
+13:36:58.571 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - getChargeCodes ::: START
+13:36:58.572 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - getChargeCodes ::: Invalid chargecode existance in request: false
+13:36:58.573 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - Single chargecode in sthe request
+13:36:58.574 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - binding parameter [1] as [VARCHAR] - [AAAA]
+13:37:00.688 [http-nio-8090-exec-3] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 0371323d-bfbc-475d-afce-9d66e30befa1
+13:37:00.725 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - getChargeCodes: 
+13:37:00.726 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - getChargeCodes: 1
+13:37:00.729 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - getChargeCodes ::: START
+13:37:00.737 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:37:00.738 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - Single chargecode in sthe request
+13:37:00.744 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - binding parameter [1] as [VARCHAR] - [AAAA]
+13:37:28.375 [http-nio-8090-exec-4] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : a2498ab5-d5ea-4901-bc7c-bf74bbe87b44
+13:37:28.380 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - getChargeCodes: 
+13:37:28.381 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - getChargeCodes: 1
+13:37:28.383 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - getChargeCodes ::: START
+13:37:28.385 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:37:28.385 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - Single chargecode in sthe request
+13:37:28.386 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:37:28.435 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:37:28.453 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:37:28.454 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - getChargeCodes ::: END
+13:38:03.429 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger CorrelationId  - Slf4jLogger started
+13:38:04.504 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter CorrelationId  - Initializing
+13:38:04.515 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter CorrelationId  - Initializing
+13:38:04.571 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter CorrelationId  - Initialized
+13:38:04.593 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.c.stats.writer.ConsoleDataWriter CorrelationId  - Initialized
+13:38:06.248 [main] INFO  io.gatling.http.ahc.HttpEngine CorrelationId  - Start warm up
+13:38:07.342 [main] INFO  io.gatling.http.ahc.HttpEngine CorrelationId  - Warm up done
+13:38:07.681 [http-nio-8090-exec-5] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 9d87fb76-ee4e-433d-a4f4-1b69f6031b34
+13:38:07.685 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - getChargeCodes: 
+13:38:07.685 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - getChargeCodes: 1
+13:38:07.686 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - getChargeCodes ::: START
+13:38:07.687 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:07.687 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - Single chargecode in sthe request
+13:38:07.689 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.690 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.705 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:07.705 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - getChargeCodes ::: END
+13:38:07.753 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=64ms)
+13:38:07.855 [http-nio-8090-exec-6] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0
+13:38:07.866 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - Inside isChargeCodeAuthorized
+13:38:07.876 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:07.877 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.878 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.880 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - employee id: 1233
+13:38:07.880 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - ChargeCodeServiceImpl: getChargeCode End
+13:38:07.892 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=72ms)
+13:38:07.982 [http-nio-8090-exec-7] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 8247b27b-fff6-4271-9dca-f64fe5ec178a
+13:38:07.986 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - getChargeCodes: 
+13:38:07.989 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - getChargeCodes: 1
+13:38:07.991 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - getChargeCodes ::: START
+13:38:07.991 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:07.992 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - Single chargecode in sthe request
+13:38:07.993 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.994 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:07.995 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:07.995 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - getChargeCodes ::: END
+13:38:08.005 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=98ms)
+13:38:08.132 [http-nio-8090-exec-9] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 8b694113-1eeb-4224-a251-174fb8024807
+13:38:08.136 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - Inside isChargeCodeAuthorized
+13:38:08.138 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:08.139 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.140 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.141 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - employee id: 1233
+13:38:08.141 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - ChargeCodeServiceImpl: getChargeCode End
+13:38:08.160 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=77ms)
+13:38:08.226 [http-nio-8090-exec-10] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 86699ea7-dda8-49ea-a45d-b0e5b7c51cad
+13:38:08.239 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - getChargeCodes: 
+13:38:08.239 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - getChargeCodes: 1
+13:38:08.241 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - getChargeCodes ::: START
+13:38:08.242 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:08.242 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - Single chargecode in sthe request
+13:38:08.244 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.245 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.246 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:08.247 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - getChargeCodes ::: END
+13:38:08.268 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:08.392 [http-nio-8090-exec-2] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId d0e2d73b-b622-4798-a2d4-9051f7e1107c - No correlationId found in Header. Generated : a5172cde-147d-4233-ac8f-8d8029b4e06c
+13:38:08.396 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - Inside isChargeCodeAuthorized
+13:38:08.397 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - ChargeCodeServiceImpl: getChargeCode Start
+13:38:08.399 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.405 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.406 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - employee id: 1233
+13:38:08.407 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - ChargeCodeServiceImpl: getChargeCode End
+13:38:08.420 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=80ms)
+13:38:08.517 [http-nio-8090-exec-3] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 0371323d-bfbc-475d-afce-9d66e30befa1 - No correlationId found in Header. Generated : 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48
+13:38:08.526 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - getChargeCodes: 
+13:38:08.526 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - getChargeCodes: 1
+13:38:08.528 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - getChargeCodes ::: START
+13:38:08.529 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:08.531 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - Single chargecode in sthe request
+13:38:08.532 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.533 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.534 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:08.535 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - getChargeCodes ::: END
+13:38:08.545 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:08.663 [http-nio-8090-exec-5] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9d87fb76-ee4e-433d-a4f4-1b69f6031b34 - No correlationId found in Header. Generated : 4de9929b-f60d-463e-9e37-ee91c385c1a4
+13:38:08.666 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - Inside isChargeCodeAuthorized
+13:38:08.667 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:08.668 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.669 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.670 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - employee id: 1233
+13:38:08.671 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - ChargeCodeServiceImpl: getChargeCode End
+13:38:08.691 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=89ms)
+13:38:08.721 [http-nio-8090-exec-6] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9b8f764b-a58d-4c75-a3d2-27b645a5cfc0 - No correlationId found in Header. Generated : 32be7871-4ac9-45cc-9c6f-406f4dd99f59
+13:38:08.723 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - getChargeCodes: 
+13:38:08.724 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - getChargeCodes: 1
+13:38:08.724 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - getChargeCodes ::: START
+13:38:08.724 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:08.725 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - Single chargecode in sthe request
+13:38:08.725 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.726 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.727 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:08.727 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - getChargeCodes ::: END
+13:38:08.739 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:08.848 [http-nio-8090-exec-7] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 8247b27b-fff6-4271-9dca-f64fe5ec178a - No correlationId found in Header. Generated : d9d27491-8d77-4aeb-97eb-93f20137d0cc
+13:38:08.851 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - Inside isChargeCodeAuthorized
+13:38:08.852 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - ChargeCodeServiceImpl: getChargeCode Start
+13:38:08.853 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.858 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.859 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - employee id: 1233
+13:38:08.859 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - ChargeCodeServiceImpl: getChargeCode End
+13:38:08.867 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=94ms)
+13:38:08.969 [http-nio-8090-exec-9] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 8b694113-1eeb-4224-a251-174fb8024807 - No correlationId found in Header. Generated : 43156f7d-afde-4d2c-8e79-484e862e55f4
+13:38:08.972 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - getChargeCodes: 
+13:38:08.972 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - getChargeCodes: 1
+13:38:08.974 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - getChargeCodes ::: START
+13:38:08.975 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:08.975 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - Single chargecode in sthe request
+13:38:08.976 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.977 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:08.977 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:08.978 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - getChargeCodes ::: END
+13:38:08.983 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:09.108 [http-nio-8090-exec-1] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId ad0a52ec-0e7e-4c75-bb5e-6869aee5730a - No correlationId found in Header. Generated : fbc15a6c-9611-4da9-8ac1-a12762013dfd
+13:38:09.117 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - Inside isChargeCodeAuthorized
+13:38:09.118 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - ChargeCodeServiceImpl: getChargeCode Start
+13:38:09.119 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.121 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.122 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - employee id: 1233
+13:38:09.122 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - ChargeCodeServiceImpl: getChargeCode End
+13:38:09.139 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=80ms)
+13:38:09.223 [http-nio-8090-exec-2] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId a5172cde-147d-4233-ac8f-8d8029b4e06c - No correlationId found in Header. Generated : 9a85eb63-8e32-45a3-ae37-38e36e82b510
+13:38:09.225 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - getChargeCodes: 
+13:38:09.226 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - getChargeCodes: 1
+13:38:09.227 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - getChargeCodes ::: START
+13:38:09.227 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:09.227 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - Single chargecode in sthe request
+13:38:09.228 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.251 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.252 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:09.253 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - getChargeCodes ::: END
+13:38:09.260 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:09.443 [http-nio-8090-exec-4] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId a2498ab5-d5ea-4901-bc7c-bf74bbe87b44 - No correlationId found in Header. Generated : 58b18b4f-2705-4127-8d76-089acfa00f31
+13:38:09.445 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - Inside isChargeCodeAuthorized
+13:38:09.447 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:09.448 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.449 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.450 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - employee id: 1233
+13:38:09.451 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - ChargeCodeServiceImpl: getChargeCode End
+13:38:09.465 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=32ms)
+13:38:09.477 [http-nio-8090-exec-5] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 4de9929b-f60d-463e-9e37-ee91c385c1a4 - No correlationId found in Header. Generated : 037d5f56-90d9-4169-9d9e-745e91aab6a9
+13:38:09.480 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - getChargeCodes: 
+13:38:09.481 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - getChargeCodes: 1
+13:38:09.483 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - getChargeCodes ::: START
+13:38:09.483 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:09.484 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - Single chargecode in sthe request
+13:38:09.485 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.486 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.488 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:09.488 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - getChargeCodes ::: END
+13:38:09.502 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:09.634 [http-nio-8090-exec-8] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId  - No correlationId found in Header. Generated : 714390fd-5ae7-4072-966d-9a624bba9211
+13:38:09.636 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - Inside isChargeCodeAuthorized
+13:38:09.637 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:09.638 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.639 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.640 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - employee id: 1233
+13:38:09.641 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - ChargeCodeServiceImpl: getChargeCode End
+13:38:09.648 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=73ms)
+13:38:09.720 [http-nio-8090-exec-7] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId d9d27491-8d77-4aeb-97eb-93f20137d0cc - No correlationId found in Header. Generated : a75b3761-7700-4dd6-b5e2-0f551570ab0c
+13:38:09.722 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - getChargeCodes: 
+13:38:09.723 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - getChargeCodes: 1
+13:38:09.724 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - getChargeCodes ::: START
+13:38:09.724 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:09.724 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - Single chargecode in sthe request
+13:38:09.725 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.726 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.727 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:09.728 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - getChargeCodes ::: END
+13:38:09.749 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:09.862 [http-nio-8090-exec-9] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 43156f7d-afde-4d2c-8e79-484e862e55f4 - No correlationId found in Header. Generated : ce203b3e-7658-4bb2-a90b-12ff597755d6
+13:38:09.865 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - getChargeCodes: 
+13:38:09.865 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - getChargeCodes: 1
+13:38:09.867 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - getChargeCodes ::: START
+13:38:09.867 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:09.868 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - Single chargecode in sthe request
+13:38:09.870 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.872 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.872 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:09.873 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - getChargeCodes ::: END
+13:38:09.898 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:09.902 [http-nio-8090-exec-1] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId fbc15a6c-9611-4da9-8ac1-a12762013dfd - No correlationId found in Header. Generated : bb2c4877-7ef7-4db2-87da-388de6f885e7
+13:38:09.904 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - Inside isChargeCodeAuthorized
+13:38:09.905 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:09.907 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.911 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:09.913 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - employee id: 1233
+13:38:09.914 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - ChargeCodeServiceImpl: getChargeCode End
+13:38:09.920 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=71ms)
+13:38:10.017 [http-nio-8090-exec-3] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 68d9ba97-bf6a-4010-ba1b-ce03c1d54c48 - No correlationId found in Header. Generated : 9784d4d7-d36d-4098-9d47-a418a250f4a9
+13:38:10.020 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - Inside isChargeCodeAuthorized
+13:38:10.021 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:10.022 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.023 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.024 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - employee id: 1233
+13:38:10.025 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - ChargeCodeServiceImpl: getChargeCode End
+13:38:10.030 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=85ms)
+13:38:10.100 [http-nio-8090-exec-4] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 58b18b4f-2705-4127-8d76-089acfa00f31 - No correlationId found in Header. Generated : 80f3ecb1-cab2-41c0-abec-76210bffd752
+13:38:10.103 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - getChargeCodes: 
+13:38:10.104 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - getChargeCodes: 1
+13:38:10.105 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - getChargeCodes ::: START
+13:38:10.105 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:10.106 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - Single chargecode in sthe request
+13:38:10.107 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.108 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.109 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:10.109 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - getChargeCodes ::: END
+13:38:10.120 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:10.228 [http-nio-8090-exec-6] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 32be7871-4ac9-45cc-9c6f-406f4dd99f59 - No correlationId found in Header. Generated : 7103cbcc-5b35-4e8d-8ce9-0c7f83208371
+13:38:10.231 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - Inside isChargeCodeAuthorized
+13:38:10.232 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:10.233 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.234 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.235 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - employee id: 1233
+13:38:10.235 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - ChargeCodeServiceImpl: getChargeCode End
+13:38:10.244 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=97ms)
+13:38:10.350 [http-nio-8090-exec-8] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 714390fd-5ae7-4072-966d-9a624bba9211 - No correlationId found in Header. Generated : 464d64b8-b6e7-428b-b097-001805a86f5a
+13:38:10.352 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - getChargeCodes: 
+13:38:10.353 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - getChargeCodes: 1
+13:38:10.354 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - getChargeCodes ::: START
+13:38:10.354 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:10.355 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - Single chargecode in sthe request
+13:38:10.355 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.356 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.357 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:10.358 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - getChargeCodes ::: END
+13:38:10.364 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:10.477 [http-nio-8090-exec-10] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 86699ea7-dda8-49ea-a45d-b0e5b7c51cad - No correlationId found in Header. Generated : 9c817ae9-de94-4e43-b2be-b17352e18eef
+13:38:10.479 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - Inside isChargeCodeAuthorized
+13:38:10.480 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - ChargeCodeServiceImpl: getChargeCode Start
+13:38:10.481 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.482 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.483 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - employee id: 1233
+13:38:10.483 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - ChargeCodeServiceImpl: getChargeCode End
+13:38:10.496 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=91ms)
+13:38:10.598 [http-nio-8090-exec-9] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId ce203b3e-7658-4bb2-a90b-12ff597755d6 - No correlationId found in Header. Generated : 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa
+13:38:10.600 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - getChargeCodes: 
+13:38:10.600 [http-nio-8090-exec-9] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - getChargeCodes: 1
+13:38:10.601 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - getChargeCodes ::: START
+13:38:10.601 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:10.602 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - Single chargecode in sthe request
+13:38:10.602 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.603 [http-nio-8090-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.605 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:10.605 [http-nio-8090-exec-9] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 8d1d5350-4973-4a03-b0f2-0b85ab2ce1aa - getChargeCodes ::: END
+13:38:10.613 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:10.732 [http-nio-8090-exec-2] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9a85eb63-8e32-45a3-ae37-38e36e82b510 - No correlationId found in Header. Generated : ef511888-438f-4dd4-aa63-eaab34301c5b
+13:38:10.734 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - Inside isChargeCodeAuthorized
+13:38:10.735 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - ChargeCodeServiceImpl: getChargeCode Start
+13:38:10.736 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.737 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.738 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - employee id: 1233
+13:38:10.739 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - ChargeCodeServiceImpl: getChargeCode End
+13:38:10.747 [gatling-http-thread-1-6] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=89ms)
+13:38:10.860 [http-nio-8090-exec-4] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 80f3ecb1-cab2-41c0-abec-76210bffd752 - No correlationId found in Header. Generated : 2135084f-7472-4930-b51f-9b885309667f
+13:38:10.862 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 2135084f-7472-4930-b51f-9b885309667f - getChargeCodes: 
+13:38:10.862 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 2135084f-7472-4930-b51f-9b885309667f - getChargeCodes: 1
+13:38:10.863 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 2135084f-7472-4930-b51f-9b885309667f - getChargeCodes ::: START
+13:38:10.864 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 2135084f-7472-4930-b51f-9b885309667f - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:10.864 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 2135084f-7472-4930-b51f-9b885309667f - Single chargecode in sthe request
+13:38:10.865 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 2135084f-7472-4930-b51f-9b885309667f - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.866 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 2135084f-7472-4930-b51f-9b885309667f - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:10.867 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 2135084f-7472-4930-b51f-9b885309667f - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:10.867 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 2135084f-7472-4930-b51f-9b885309667f - getChargeCodes ::: END
+13:38:10.872 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:10.998 [http-nio-8090-exec-5] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 037d5f56-90d9-4169-9d9e-745e91aab6a9 - No correlationId found in Header. Generated : edc61364-47b2-4a3b-be22-ae60c8c6c820
+13:38:11.001 [http-nio-8090-exec-5] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - Inside isChargeCodeAuthorized
+13:38:11.002 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:11.003 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.004 [http-nio-8090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.005 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - employee id: 1233
+13:38:11.005 [http-nio-8090-exec-5] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId edc61364-47b2-4a3b-be22-ae60c8c6c820 - ChargeCodeServiceImpl: getChargeCode End
+13:38:11.014 [gatling-http-thread-1-7] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=78ms)
+13:38:11.117 [http-nio-8090-exec-8] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 464d64b8-b6e7-428b-b097-001805a86f5a - No correlationId found in Header. Generated : 90b1fdbe-0de8-462e-98c6-274e5b6cbc05
+13:38:11.119 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - getChargeCodes: 
+13:38:11.119 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - getChargeCodes: 1
+13:38:11.120 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - getChargeCodes ::: START
+13:38:11.120 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:11.121 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - Single chargecode in sthe request
+13:38:11.121 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.123 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.124 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:11.124 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - getChargeCodes ::: END
+13:38:11.128 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:11.250 [http-nio-8090-exec-7] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId a75b3761-7700-4dd6-b5e2-0f551570ab0c - No correlationId found in Header. Generated : 45bb1818-e4c5-4168-b86f-0515497b6c03
+13:38:11.253 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - Inside isChargeCodeAuthorized
+13:38:11.254 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:11.255 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.256 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.257 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - employee id: 1233
+13:38:11.257 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - ChargeCodeServiceImpl: getChargeCode End
+13:38:11.262 [gatling-http-thread-1-8] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=80ms)
+13:38:11.391 [http-nio-8090-exec-10] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9c817ae9-de94-4e43-b2be-b17352e18eef - No correlationId found in Header. Generated : 9f6c63a4-092f-4a87-9109-7614fed0487b
+13:38:11.395 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - getChargeCodes: 
+13:38:11.396 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - getChargeCodes: 1
+13:38:11.397 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - getChargeCodes ::: START
+13:38:11.397 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:11.397 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - Single chargecode in sthe request
+13:38:11.398 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.399 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.403 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:11.403 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - getChargeCodes ::: END
+13:38:11.419 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:11.548 [http-nio-8090-exec-1] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId bb2c4877-7ef7-4db2-87da-388de6f885e7 - No correlationId found in Header. Generated : cf783c85-9171-4cdf-a852-a3911343b156
+13:38:11.550 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - Inside isChargeCodeAuthorized
+13:38:11.551 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:11.552 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.553 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.554 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - employee id: 1233
+13:38:11.554 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - ChargeCodeServiceImpl: getChargeCode End
+13:38:11.560 [gatling-http-thread-1-1] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=76ms)
+13:38:11.596 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller CorrelationId  - InjectionStopped expectedCount=20
+13:38:11.599 [http-nio-8090-exec-2] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId ef511888-438f-4dd4-aa63-eaab34301c5b - No correlationId found in Header. Generated : f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8
+13:38:11.601 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - getChargeCodes: 
+13:38:11.601 [http-nio-8090-exec-2] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - getChargeCodes: 1
+13:38:11.602 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - getChargeCodes ::: START
+13:38:11.602 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:11.603 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - Single chargecode in sthe request
+13:38:11.604 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.605 [http-nio-8090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.606 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:11.607 [http-nio-8090-exec-2] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId f6d3f627-9fc8-4c14-ae0a-e5cacf378fa8 - getChargeCodes ::: END
+13:38:11.617 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:11.740 [http-nio-8090-exec-4] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 2135084f-7472-4930-b51f-9b885309667f - No correlationId found in Header. Generated : aa88b27a-d90c-4c75-aa7b-97e7b27c3083
+13:38:11.742 [http-nio-8090-exec-4] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - Inside isChargeCodeAuthorized
+13:38:11.742 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:11.743 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.744 [http-nio-8090-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.744 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - employee id: 1233
+13:38:11.745 [http-nio-8090-exec-4] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId aa88b27a-d90c-4c75-aa7b-97e7b27c3083 - ChargeCodeServiceImpl: getChargeCode End
+13:38:11.749 [gatling-http-thread-1-2] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=80ms)
+13:38:11.870 [http-nio-8090-exec-6] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 7103cbcc-5b35-4e8d-8ce9-0c7f83208371 - No correlationId found in Header. Generated : 86dc7903-7b6b-4050-bbeb-194daa1dad63
+13:38:11.872 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - getChargeCodes: 
+13:38:11.873 [http-nio-8090-exec-6] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - getChargeCodes: 1
+13:38:11.874 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - getChargeCodes ::: START
+13:38:11.875 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:11.875 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - Single chargecode in sthe request
+13:38:11.876 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.877 [http-nio-8090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:11.878 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:11.878 [http-nio-8090-exec-6] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 86dc7903-7b6b-4050-bbeb-194daa1dad63 - getChargeCodes ::: END
+13:38:11.885 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:12.007 [http-nio-8090-exec-8] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 90b1fdbe-0de8-462e-98c6-274e5b6cbc05 - No correlationId found in Header. Generated : c407d2f3-68d3-487a-9d54-fcba5bd834e9
+13:38:12.011 [http-nio-8090-exec-8] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - Inside isChargeCodeAuthorized
+13:38:12.014 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:12.016 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.018 [http-nio-8090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.019 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - employee id: 1233
+13:38:12.020 [http-nio-8090-exec-8] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId c407d2f3-68d3-487a-9d54-fcba5bd834e9 - ChargeCodeServiceImpl: getChargeCode End
+13:38:12.038 [gatling-http-thread-1-3] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=87ms)
+13:38:12.112 [http-nio-8090-exec-7] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 45bb1818-e4c5-4168-b86f-0515497b6c03 - No correlationId found in Header. Generated : 75944a23-b571-47b1-827f-8714ca7edb3d
+13:38:12.114 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - getChargeCodes: 
+13:38:12.115 [http-nio-8090-exec-7] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - getChargeCodes: 1
+13:38:12.116 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - getChargeCodes ::: START
+13:38:12.116 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:12.116 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - Single chargecode in sthe request
+13:38:12.117 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.119 [http-nio-8090-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.120 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:12.120 [http-nio-8090-exec-7] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 75944a23-b571-47b1-827f-8714ca7edb3d - getChargeCodes ::: END
+13:38:12.126 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=100ms)
+13:38:12.252 [http-nio-8090-exec-10] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9f6c63a4-092f-4a87-9109-7614fed0487b - No correlationId found in Header. Generated : df2df43c-90b2-4e26-bf8d-69f8825c62fe
+13:38:12.255 [http-nio-8090-exec-10] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - Inside isChargeCodeAuthorized
+13:38:12.256 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - ChargeCodeServiceImpl: getChargeCode Start
+13:38:12.257 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.258 [http-nio-8090-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.259 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - employee id: 1233
+13:38:12.259 [http-nio-8090-exec-10] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId df2df43c-90b2-4e26-bf8d-69f8825c62fe - ChargeCodeServiceImpl: getChargeCode End
+13:38:12.268 [gatling-http-thread-1-4] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=81ms)
+13:38:12.360 [http-nio-8090-exec-1] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId cf783c85-9171-4cdf-a852-a3911343b156 - No correlationId found in Header. Generated : 44f8ffa2-0421-4614-850d-9d0d5b9d25a1
+13:38:12.362 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - getChargeCodes: 
+13:38:12.362 [http-nio-8090-exec-1] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - getChargeCodes: 1
+13:38:12.363 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - getChargeCodes ::: START
+13:38:12.364 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - getChargeCodes ::: Invalid chargecode existance in request: false
+13:38:12.364 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - Single chargecode in sthe request
+13:38:12.366 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.366 [http-nio-8090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.367 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - chargecode retrived from DB: com.accenture.lari.chargecode.domain.ChargeCodeEntity@84df7bc6
+13:38:12.368 [http-nio-8090-exec-1] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId 44f8ffa2-0421-4614-850d-9d0d5b9d25a1 - getChargeCodes ::: END
+13:38:12.371 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=99ms)
+13:38:12.491 [http-nio-8090-exec-3] INFO  c.a.l.utils.CorrelationHeaderFilter CorrelationId 9784d4d7-d36d-4098-9d47-a418a250f4a9 - No correlationId found in Header. Generated : a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808
+13:38:12.498 [http-nio-8090-exec-3] INFO  c.a.l.c.r.ChargeCodeMasterController CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - Inside isChargeCodeAuthorized
+13:38:12.499 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - ChargeCodeServiceImpl: getChargeCode Start
+13:38:12.500 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.501 [http-nio-8090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - binding parameter [1] as [VARCHAR] - [AAAAA]
+13:38:12.505 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - employee id: 1233
+13:38:12.505 [http-nio-8090-exec-3] INFO  c.a.l.c.s.impl.ChargeCodeServiceImpl CorrelationId a947bdb5-d08d-46f9-9ca1-1c2cfb3e3808 - ChargeCodeServiceImpl: getChargeCode End
+13:38:12.514 [gatling-http-thread-1-5] INFO  io.gatling.core.action.Pause CorrelationId  - Pausing for 100ms (real=87ms)
+13:38:12.615 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller CorrelationId  - All users are stopped
+13:38:12.641 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.gatling.core.controller.Controller CorrelationId  - StatsEngineStopped
+13:38:12.703 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Collected ArrayBuffer(C:\spring-boot\emp_chargecode_master\target\gatling\mainsimulation-1492762084433\simulation.log) from mainsimulation-1492762084433
+13:38:12.719 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - First pass
+13:38:12.745 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - First pass done: read 81 lines
+13:38:12.763 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Second pass
+13:38:12.824 [main] INFO  i.gatling.charts.stats.LogFileReader CorrelationId  - Second pass: read 81 lines
+13:38:28.836 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:43:28.857 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:48:28.865 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:53:00.679 [DiscoveryClient-CacheRefreshExecutor-0] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient CorrelationId  - Request execution error
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:122)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+13:53:00.684 [DiscoveryClient-CacheRefreshExecutor-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution failure
+13:53:01.194 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution succeeded on retry #1
+13:53:28.873 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+13:58:28.900 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+14:03:28.918 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+14:08:28.915 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+14:13:28.938 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+14:18:28.939 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver CorrelationId  - Resolving eureka endpoints via configuration
+14:19:04.359 [DiscoveryClient-CacheRefreshExecutor-0] ERROR c.n.d.s.t.d.RedirectingEurekaHttpClient CorrelationId  - Request execution error
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:119)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1064)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:946)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1468)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1435)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to 54.145.29.160:8761 timed out
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:122)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:117)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 common frames omitted
+14:19:04.361 [DiscoveryClient-CacheRefreshExecutor-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution failure
+14:19:04.783 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.d.s.t.d.RetryableEurekaHttpClient CorrelationId  - Request execution succeeded on retry #1
