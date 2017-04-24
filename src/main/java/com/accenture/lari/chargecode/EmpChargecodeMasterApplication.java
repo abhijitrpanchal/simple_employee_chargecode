@@ -4,13 +4,13 @@ package com.accenture.lari.chargecode;
 
 //import java.util.Arrays;
 
-//import org.modelmapper.ModelMapper;
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import org.springframework.boot.web.servlet.FilterRegistrationBean;
 //import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 //import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-//import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Bean;
 //import org.springframework.context.annotation.Configuration;
 //import org.springframework.context.annotation.Primary;
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -102,12 +102,12 @@ public class EmpChargecodeMasterApplication {
 				.license("Accenture License Version")
 				.build();
 	}
-	
+	*/
 	@Bean
 	public ModelMapper modelMapper() {
 	    return new ModelMapper();
 	}
-	*/
+	
 	
 	
 }
