@@ -19,9 +19,9 @@ import com.accenture.lari.chargecode.resources.dto.ChargeCodeDTO;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
 import com.accenture.lari.chargecode.utility.ApplicationUtils;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
+//import io.swagger.annotations.Api;
+//import io.swagger.annotations.ApiOperation;
+//import io.swagger.annotations.ApiParam;
 
 /**
  * @author j.venugopalan
@@ -31,7 +31,7 @@ import io.swagger.annotations.ApiParam;
 
 @RestController
 @RequestMapping(value = "/chargecodes", produces = "application/json")
-@Api(tags = "Employee Charge Code API")
+//@Api(tags = "Employee Charge Code API")
 
 // @Api(decscription = "Employee Charge Code Service")
 public class ChargeCodeMasterController {
@@ -48,11 +48,13 @@ public class ChargeCodeMasterController {
 	ApplicationUtils applicationUtils;
 
 
-	@ApiOperation(notes = "This End point will check if the employee ID has access or is authorized  to the use the given WBS. WBS details are written in json format.", value = "isChargeCodeAuthorized", nickname = "ChargeCodeDetails")
+//	@ApiOperation(notes = "This End point will check if the employee ID has access or is authorized  to the use the given WBS. WBS details are written in json format.", value = "isChargeCodeAuthorized", nickname = "ChargeCodeDetails")
 	@RequestMapping(value = "/{wbs}/employees/{empid}", method = RequestMethod.GET)
 	public ChargeCodeDTO isChargeCodeAuthorized(
-			@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice", required = true) @PathVariable("wbs") String chargeCode,
-			@ApiParam(value = "ID of the employee for whom the given chargerecords details are retrieved", required = true) @PathVariable("empid") Integer empid)
+	//		@ApiParam(value = "ID of the chargecode whose records needs to be looked into the chargecode microservice", required = true) @PathVariable("wbs") 
+			String chargeCode,
+		//	@ApiParam(value = "ID of the employee for whom the given chargerecords details are retrieved", required = true) @PathVariable("empid")
+			Integer empid)
 			throws Exception {
 
 		log.info("Inside isChargeCodeAuthorized");
@@ -64,7 +66,7 @@ public class ChargeCodeMasterController {
 		return chargeDTO;
 	}
 
-	@ApiOperation(notes = "This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.", value = "validateChargeCode", nickname = "EmployeeChargeCode")
+	//@ApiOperation(notes = "This End point will check if the given WBS is a valid WBS from the list of WBS in DB. WBS details are written in json format.", value = "validateChargeCode", nickname = "EmployeeChargeCode")
 	@RequestMapping(value = "/{chargecodes}", method = RequestMethod.GET)
 	public Collection<ChargeCodeDTO> getChargeCodes(@PathVariable("chargecodes") String[] chargeCodesList) {
 		Collection<String> chargeCodesArray = new ArrayList<>();

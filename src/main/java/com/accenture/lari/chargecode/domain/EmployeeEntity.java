@@ -1,19 +1,18 @@
 package com.accenture.lari.chargecode.domain;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-@Entity
-@Table(name = "EMPLOYEE")
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+//@Entity
+//@Table(name = "EMPLOYEE")
 //@Document
 public class EmployeeEntity {
 	
 	
 	@Id 
 	/*private Integer id;*/
-	@Column(name = "employee_id")
+	//@Column(name = "employee_id")
 	//@Field
 	private Integer employeeId;
 	//@Field

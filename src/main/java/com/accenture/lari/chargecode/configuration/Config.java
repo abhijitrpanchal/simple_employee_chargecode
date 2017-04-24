@@ -8,15 +8,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
-import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepositories;
+//import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
+//import org.springframework.data.couchbase.repository.config.EnableCouchbaseRepositories;
 
 
 /**
  * @author j.venugopalan
  *
  */
-@Configuration
+/*@Configuration
 @EnableCouchbaseRepositories(basePackages = {"com.accenture.lari.chargecode" })
 public class Config extends AbstractCouchbaseConfiguration {
 	
@@ -37,7 +37,7 @@ public class Config extends AbstractCouchbaseConfiguration {
     @Override
     protected String getBucketPassword() {
         return "ACC@123*";
-    }
+    }*/
  /* 
     @Bean    
     public RequestInterceptor requestTokenBearerInterceptor() {
@@ -60,4 +60,4 @@ public class Config extends AbstractCouchbaseConfiguration {
         };
 
     }*/
-}
+//}

@@ -14,12 +14,12 @@ import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.domain.EmployeeEntity;
 import com.accenture.lari.chargecode.repository.ChargeCodeRepository;
 
-import au.com.dius.pact.provider.junit.PactRunner;
-import au.com.dius.pact.provider.junit.Provider;
-import au.com.dius.pact.provider.junit.State;
-import au.com.dius.pact.provider.junit.loader.PactFolder;
-import au.com.dius.pact.provider.junit.target.HttpTarget;
-import au.com.dius.pact.provider.junit.target.TestTarget;
+//import au.com.dius.pact.provider.junit.PactRunner;
+//import au.com.dius.pact.provider.junit.Provider;
+//import au.com.dius.pact.provider.junit.State;
+//import au.com.dius.pact.provider.junit.loader.PactFolder;
+//import au.com.dius.pact.provider.junit.target.HttpTarget;
+//import au.com.dius.pact.provider.junit.target.TestTarget;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -28,9 +28,9 @@ import java.util.Set;
 
 @Profile("pact_test")
 
-@RunWith(PactRunner.class)
-@Provider("chargecodes")
-@PactFolder(ChargeCodeTestConstants.pactFolder)
+//@RunWith(PactRunner.class)
+//@Provider("chargecodes")
+//@PactFolder(ChargeCodeTestConstants.pactFolder)
 
 @SpringBootTest(
   classes = EmpChargecodeMasterApplication.class,
@@ -45,8 +45,8 @@ public class ProviderPactTest {
 	
 	
 
-    @TestTarget
-    public final HttpTarget target = new HttpTarget(8080);
+    //@TestTarget
+    //public final HttpTarget target = new HttpTarget(8080);
 
 
     @Before
@@ -57,7 +57,7 @@ public class ProviderPactTest {
     }
     
     
-    @State("given charge code A56789 exists")	
+    //@State("given charge code A56789 exists")	
     public void toDefaultState() {
     	
     	EmployeeEntity EmployeeEntity=new EmployeeEntity(11111,"Prithvi","Bangalore");

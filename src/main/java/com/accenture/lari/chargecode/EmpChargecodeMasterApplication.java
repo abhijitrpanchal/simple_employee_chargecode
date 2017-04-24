@@ -1,48 +1,48 @@
 package com.accenture.lari.chargecode;
 
-import static springfox.documentation.builders.PathSelectors.regex;
+//import static springfox.documentation.builders.PathSelectors.regex;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
-import org.modelmapper.ModelMapper;
+//import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
-import org.springframework.stereotype.Component;
+//import org.springframework.boot.web.servlet.FilterRegistrationBean;
+//import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.context.annotation.Primary;
+//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+//import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+//import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
+//import org.springframework.stereotype.Component;
 
-import com.accenture.lari.utils.CorrelationHeaderFilter;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
+//import com.accenture.lari.utils.CorrelationHeaderFilter;
+//import com.fasterxml.jackson.annotation.JsonInclude;
+//import com.fasterxml.jackson.databind.DeserializationFeature;
+//import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.SerializationFeature;
 
-import springfox.documentation.builders.ApiInfoBuilder;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.Contact;
-import springfox.documentation.spi.DocumentationType;
-import springfox.documentation.spring.web.plugins.Docket;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+//import springfox.documentation.builders.ApiInfoBuilder;
+//import springfox.documentation.service.ApiInfo;
+//import springfox.documentation.service.Contact;
+//import springfox.documentation.spi.DocumentationType;
+//import springfox.documentation.spring.web.plugins.Docket;
+//import springfox.documentation.swagger2.annotations.EnableSwagger2;
  
 
 @SpringBootApplication
-@EnableCircuitBreaker
-@EnableDiscoveryClient
-@EnableSwagger2
-@EnableResourceServer
+//@EnableCircuitBreaker
+//@EnableDiscoveryClient
+//@EnableSwagger2
+//@EnableResourceServer
 /*@EntityScan(basePackages = {"com.accenture.lari.chargecode"} )
 @EnableJpaRepositories(basePackages = {"com.accenture.lari.chargecode"})*/
 public class EmpChargecodeMasterApplication {
 	
 	
-	@Configuration
+/*	@Configuration
 	protected static class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
 
 	    @Override
@@ -56,12 +56,12 @@ public class EmpChargecodeMasterApplication {
 	    
 	    }
 	    
-	}
+	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmpChargecodeMasterApplication.class, args);
 	}
-	@Bean
+	/*@Bean
 	public FilterRegistrationBean correlationHeaderFilter() {
 		FilterRegistrationBean filterRegBean = new FilterRegistrationBean();
 		filterRegBean.setFilter(new CorrelationHeaderFilter());
@@ -107,7 +107,7 @@ public class EmpChargecodeMasterApplication {
 	public ModelMapper modelMapper() {
 	    return new ModelMapper();
 	}
-	
+	*/
 	
 	
 }

@@ -18,7 +18,7 @@ import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 import com.accenture.lari.chargecode.domain.EmployeeEntity;
 import com.accenture.lari.chargecode.repository.ChargeCodeRepository;
 import com.accenture.lari.chargecode.service.ChargeCodeService;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+//import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
  * @author j.venugopalan
@@ -65,7 +65,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 	   * @fallbackMethod handleIsChargeCodeAuthorised
 	 */
 	
-	@HystrixCommand(fallbackMethod="handleIsChargeCodeAuthorised")
+	//@HystrixCommand(fallbackMethod="handleIsChargeCodeAuthorised")
 	public ChargeCodeEntity getChargeCode(String chargeCode,Integer employyeId){
 	
 		log.info("ChargeCodeServiceImpl: getChargeCode Start");
@@ -117,7 +117,7 @@ public class ChargeCodeServiceImpl implements ChargeCodeService{
 		}
 		
 	}
-	@HystrixCommand(fallbackMethod="getChargeCodeFault")
+	//@HystrixCommand(fallbackMethod="getChargeCodeFault")
 	public Collection<ChargeCodeEntity> getChargeCodes(Collection<String> chargeCodes){
 		log.info("getChargeCodes ::: START");
 		Collection<String> invalidChargeCode = Arrays.asList("AI50000", "BN124444", "CD661234");

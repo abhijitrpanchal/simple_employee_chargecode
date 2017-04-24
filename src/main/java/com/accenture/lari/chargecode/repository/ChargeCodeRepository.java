@@ -4,9 +4,7 @@
 package com.accenture.lari.chargecode.repository;
 
 
-import org.springframework.data.couchbase.core.query.View;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
 
@@ -17,7 +15,7 @@ import com.accenture.lari.chargecode.domain.ChargeCodeEntity;
  *
  */
 
-public  interface ChargeCodeRepository extends JpaRepository<ChargeCodeEntity, String> {
+public  interface ChargeCodeRepository extends MongoRepository<ChargeCodeEntity, String> {
 
    public  ChargeCodeEntity findByChargeCode(String chargeCode);
    
@@ -25,14 +23,4 @@ public  interface ChargeCodeRepository extends JpaRepository<ChargeCodeEntity, S
    
 }
 
-/*public  interface ChargeCodeRepository extends CrudRepository<ChargeCodeEntity, String>{
-
-	@View(designDocument = "chargecodes", viewName = "byChargeCode")
-	ChargeCodeEntity findByChargeCode(String chargeCode);  
-	
-	@View(designDocument = "chargecodeandemployee", viewName = "byChargeCodeEmployeeId")
-	ChargeCodeEntity findByChargeCodeAndAuthorizedEmployeesEmployeeId(String chargeCode, Integer employeeId);
-	
-	
-	}*/
 	

@@ -1,25 +1,18 @@
 package com.accenture.lari.chargecode.domain;
 
 import java.util.Set;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Entity
-@Table(name = "CHARGECODE")
+//@Entity
+//@Table(name = "CHARGECODE")
 //@Document
 public class ChargeCodeEntity {
 
 	@Id
 	//private Integer id;
-	@Column(name = "charge_code")
+	//@Column(name = "charge_code")
 	//@Field
 	private String chargeCode;
 	//@Field	
@@ -29,8 +22,8 @@ public class ChargeCodeEntity {
 	//@Field
 	private String status;
 	//@Field
-	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
+	//@ManyToMany(cascade = CascadeType.ALL)
+	//@JoinTable(name = "CHARGE_CODE_EMPLOYEE", joinColumns = { @JoinColumn(name = "charge_code") }, inverseJoinColumns = { @JoinColumn(name = "employee_id") })
 	private Set<EmployeeEntity> authorizedEmployees;
 	public ChargeCodeEntity(String chargeCode, String engagement, String company, String status,
 			Set<EmployeeEntity> authorizedEmployees) {
